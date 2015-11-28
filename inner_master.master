@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="inner_master.master.cs" Inherits="inner_master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style8 {
+            width: 100%;
+        }
+        .auto-style14 {
+            width: 778px;
+        }
+        .auto-style18 {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <table class="auto-style8">
+        <tr>
+            <td class="auto-style14">
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="150px" ImageUrl="~/images/Logo 2.jpg" Width="150px" />
+                &nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/Radio_MAIN(VERSION4)150px.png" Width="170px" />
+                &nbsp;&nbsp;&nbsp; &nbsp;<asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/images/Emergency numbers_MAIN(VERSION4).png" Width="170px" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/images/Feedback_MAIN(VERSION4).png" Width="170px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            <td>
+                <img class="auto-style18" src="images/Facebook.jpg" /></td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
