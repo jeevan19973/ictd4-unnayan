@@ -172,10 +172,11 @@
         <table class="auto-style1">
             <tr>
                 <td>
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/upload.aspx">Want to Upload?</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Digital Humanities/upload.aspx">Want to Upload?</asp:HyperLink>
+                    &nbsp; or&nbsp;
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Digital Humanities/uploadtext.aspx">Share your thoughts</asp:HyperLink>
                     <br />
                     <br />
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default3.aspx">videos</asp:HyperLink>
                 </td>
                 <td>&nbsp;</td>
             </tr>
