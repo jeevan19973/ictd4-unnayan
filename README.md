@@ -1,2 +1,2 @@
 # ictd4-unnayan
-this is unnayan ictd4
+A vast majority of the underserved population, who are low literate and facing linguistic and communicative barriers, lacks access to information on aspects critical to their livelihood, such as market prices, education and jobs. This project seeks to co-create access to information and feedback mechanism, and collective content generation to reduce existing information gaps, and will situate community members as key stake-holders for taking context-specific decisions in real-time from their local spaces in local language. 
