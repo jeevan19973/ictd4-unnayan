@@ -81,47 +81,5 @@ public partial class Job_Register_Job : System.Web.UI.Page
             return true;
     }
    
-    protected void TextBox_Usn_TextChanged(object sender, EventArgs e)
-    {
-       /* RequiredFieldValidator_Usn.Validate();
-        Label_Usn.Text = "";
-        int i = 1;
-        Response.Write("Text cahnged" + i++);
-        string constr = ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString;
-        SqlConnection con = new SqlConnection(constr);
-        SqlCommand cmd = new SqlCommand("select count(*) from Job_UserData where lower(username) = lower(@Usn)", con);
-        //your code will not work, if you have in database UserName = "login", but user write it as "Login", because your sql-query is case sensitive
-        cmd.Parameters.AddWithValue("@Usn", TextBox_Usn.Text);
-        if (TextBox_Usn.Text != "")
-         {
-            bool is_exists = false;
-            try
-            {
-                con.Open();
-                is_exists = (int)cmd.ExecuteScalar() == 0 ? false : true;
-            }
-            catch (Exception ex)
-            {
-                //if you will work with exceptions. But they will not be =)
-            }
-            finally
-            {
-                con.Close();
-            }
-            if (is_exists)
-            {
-                Label_Usn.Text = "This UserName is already exists. Please Choose another one";
-                this.Label_Usn.ForeColor = System.Drawing.Color.Red;
-
-                TextBox_Usn.Focus();
-            }
-            else
-            {
-                Label_Usn.Text = "UserName is Available";
-                this.Label_Usn.ForeColor = System.Drawing.Color.Red;
-            }
-        }
-        */
-
-    }
+    
 }

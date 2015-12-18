@@ -42,7 +42,7 @@
             <tr>
                 <td class="auto-style3" style="text-align: right">Username</td>
                 <td class="auto-style4">
-                    <asp:TextBox ID="TextBox_Usn" runat="server" Width="200px" OnTextChanged="TextBox_Usn_TextChanged" ></asp:TextBox>
+                    <asp:TextBox ID="TextBox_Usn" runat="server" Width="200px"  ></asp:TextBox>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator_Usn" runat="server" ControlToValidate="TextBox_Usn" CssClass="auto-style5" ErrorMessage="Username is required"></asp:RequiredFieldValidator>
