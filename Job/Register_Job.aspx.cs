@@ -11,7 +11,7 @@ public partial class Job_Register_Job : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+
     }
 
     protected void Button_RegForm_Submit_Click(object sender, EventArgs e)
@@ -36,7 +36,8 @@ public partial class Job_Register_Job : System.Web.UI.Page
             comm.Parameters.AddWithValue("@Address", TextBox_Address.Text);
             comm.Parameters.AddWithValue("@Occupation", TextBox_Occupation.Text);
             comm.ExecuteNonQuery();
-            Response.Write("Registration successfull");
+            Session["UserName"] = "@Usn";
+            Response.Redirect("Users/WelcomeUser.aspx");
         }
         catch (Exception insertError)
         {
@@ -69,7 +70,7 @@ public partial class Job_Register_Job : System.Web.UI.Page
         {
             if (conn != null)
                 conn.Close();
-            if(ifExists == null)
+            if (ifExists == null)
             {
                 Response.Redirect("Register_Job.aspx");
             }
@@ -80,6 +81,17 @@ public partial class Job_Register_Job : System.Web.UI.Page
         else
             return true;
     }
-   
-    
+
+
+
+
+   /* protected void Button_Delete(object sender, EventArgs e)
+    {
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        String delete_query = "Delete from Job_UserData";
+        conn.Open();
+        SqlCommand comm = new SqlCommand(delete_query, conn);
+        comm.ExecuteNonQuery();
+        conn.Close();
+    }*/
 }
