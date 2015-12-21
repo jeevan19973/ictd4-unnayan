@@ -14,4 +14,17 @@ public partial class Job_Users_WelcomeUser : System.Web.UI.Page
         else
             Response.Redirect("Login_FirstPage.aspx");
     }
+    protected void Button_Profile_Click(object sender, EventArgs e)
+    {
+        //TODO : MAKE THIS PAGE
+        Response.Redirect("UserProfile.aspx");
+    }
+    protected void Button_JobApplication_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("UserJobProfile.aspx");
+    }
+    protected void Button_CareerAdvice_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("CareerAdvice.aspx");
+    }
 }

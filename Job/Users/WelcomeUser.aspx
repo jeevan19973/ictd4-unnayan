@@ -16,16 +16,28 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div style="text-align: center" class="auto-style1">
-            
-            Welcome 
+
+    <div style="text-align: center" class="auto-style1">
+        Welcome 
             <asp:Label ID="Label_Username" runat="server" Style="font-size: large; font-weight: 700"></asp:Label>
 
-        </div>
+    </div>
 
-        <p class="auto-style2" style="text-align: left; font-size: xx-large">
-            Choose What you want to do now ?
+    <div class="auto-style2" style="text-align: left; font-size: xx-large">
+        &nbsp;What would you like to do now ?
+    </div>
+
+    <form id="form1" runat="server">
+        
+       
+            &nbsp;
+        <p>
+            &nbsp;
+            <asp:Button ID="Button_Profile" runat="server" Text="Edit Profile" OnClick="Button_Profile_Click" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button_JobApplication" runat="server" OnClick="Button_JobApplication_Click" Text="Work I can do" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button_CareerAdvice" runat="server" OnClick="Button_CareerAdvice_Click" Text="Get Some Career Advice" />
         </p>
     </form>
 </body>
