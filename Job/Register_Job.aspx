@@ -28,6 +28,18 @@
         .auto-style7 {
             font-size: xx-large;
         }
+        .auto-style8 {
+            text-align: right;
+            width: 171px;
+            height: 26px;
+        }
+        .auto-style9 {
+            width: 205px;
+            height: 26px;
+        }
+        .auto-style10 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -76,22 +88,19 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Address</td>
-                <td class="auto-style4">
+                <td class="auto-style8">Address</td>
+                <td class="auto-style9">
                     <asp:TextBox ID="TextBox_Address" runat="server" Width="200px"></asp:TextBox>
                 </td>
-                <td>
+                <td class="auto-style10">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator_Address" runat="server" ControlToValidate="TextBox_Address" CssClass="auto-style5" ErrorMessage="Address is required"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Occupation</td>
+                <td class="auto-style2">&nbsp;</td>
                 <td class="auto-style4">
-                    <asp:TextBox ID="TextBox_Occupation" runat="server" Width="200px"></asp:TextBox>
-                </td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Occupation" runat="server" ControlToValidate="TextBox_Occupation" CssClass="auto-style5" ErrorMessage="Occupation is required"></asp:RequiredFieldValidator>
-                </td>
+                    &nbsp;</td>
+                
             </tr>
         </table>
     

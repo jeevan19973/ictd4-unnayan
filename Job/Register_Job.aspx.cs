@@ -26,7 +26,7 @@ public partial class Job_Register_Job : System.Web.UI.Page
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
         try
         {
-            String insert_query = "INSERT into Job_UserData VALUES (@Usn,@Pass,@Village,@Contact,@Address,@Occupation)";
+            String insert_query = "INSERT into Job_UserData VALUES (@Usn,@Pass,@Village,@Contact,@Address)";
             conn.Open();
             SqlCommand comm = new SqlCommand(insert_query, conn);
             comm.Parameters.AddWithValue("@Usn", TextBox_Usn.Text);
@@ -34,10 +34,16 @@ public partial class Job_Register_Job : System.Web.UI.Page
             comm.Parameters.AddWithValue("@Village", TextBox_Village.Text);
             comm.Parameters.AddWithValue("@Contact", TextBox_Contact.Text);
             comm.Parameters.AddWithValue("@Address", TextBox_Address.Text);
+            comm.ExecuteNonQuery();
+            Session["UserName"] = TextBox_Usn.Text;
+            /*insert_query = "INSERT into Skills VALUES (@Usn,@Occupation)";
+            comm.CommandText = insert_query;
             comm.Parameters.AddWithValue("@Occupation", TextBox_Occupation.Text);
             comm.ExecuteNonQuery();
-            Session["UserName"] = "@Usn";
+            */
             Response.Redirect("Users/WelcomeUser.aspx");
+            
+           
         }
         catch (Exception insertError)
         {
