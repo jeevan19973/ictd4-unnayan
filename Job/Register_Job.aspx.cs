@@ -11,7 +11,8 @@ public partial class Job_Register_Job : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["Username"] != null)
+            Response.Redirect("Users/WelcomeUser.aspx");
     }
 
     protected void Button_RegForm_Submit_Click(object sender, EventArgs e)
