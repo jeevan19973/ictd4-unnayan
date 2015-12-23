@@ -27,4 +27,10 @@ public partial class Job_Users_WelcomeUser : System.Web.UI.Page
     {
         Response.Redirect("CareerAdvice.aspx");
     }
+    protected void Button_Logout_Click(object sender, EventArgs e)
+    {
+        Session["Username"] = null;
+        Response.Redirect("Login_FirstPage.aspx");
+
+    }
 }

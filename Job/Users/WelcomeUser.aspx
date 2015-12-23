@@ -17,9 +17,15 @@
 </head>
 <body>
 
+    <form id="form1" runat="server">
+        
+       
     <div style="text-align: center" class="auto-style1">
         Welcome 
             <asp:Label ID="Label_Username" runat="server" Style="font-size: large; font-weight: 700"></asp:Label>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button_Logout" runat="server" OnClick="Button_Logout_Click" Text="logout" />
 
     </div>
 
@@ -27,13 +33,11 @@
         &nbsp;What would you like to do now ?
     </div>
 
-    <form id="form1" runat="server">
-        
        
             &nbsp;
         <p>
             &nbsp;
-            <asp:Button ID="Button_Profile" runat="server" Text="Edit Profile" OnClick="Button_Profile_Click" />
+            <asp:Button ID="Button_Profile" runat="server" Text="Profile" OnClick="Button_Profile_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button_JobApplication" runat="server" OnClick="Button_JobApplication_Click" Text="Work I can do" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
