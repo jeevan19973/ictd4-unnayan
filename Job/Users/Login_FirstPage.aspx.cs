@@ -103,4 +103,8 @@ public partial class Job_Users_Login_FirstPage : System.Web.UI.Page
 
         }
     }
+    protected void Button_Advertise_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("AdvertiserInfo.aspx");
+    }
 }

@@ -77,16 +77,17 @@
             <asp:Button ID="Button_Weaving" runat="server" Text="Weaving" OnClick="Button_Weaving_Click" />
             <br />
         </div>
-        <p>
-            &nbsp;</p>
-        <asp:GridView ID="GridView_UserData" runat="server" AutoGenerateColumns="False" DataKeyNames="Username"  >
+        <p style="margin-left: 520px">
+            <asp:Button ID="Button_Advertise" runat="server" OnClick="Button_Advertise_Click" Text="Advertise" />
+        </p>
+        <p class="auto-style5"><strong>People with selcted skills are shown here</strong><asp:GridView ID="GridView_UserData" runat="server" AutoGenerateColumns="False" DataKeyNames="Username"  >
             <Columns>
                 <asp:BoundField DataField="Username" HeaderText="Username" ReadOnly="True" SortExpression="Username" />
                 <asp:BoundField DataField="Village" HeaderText="Village" SortExpression="Village" />
                 <asp:BoundField DataField="Contact" HeaderText="Contact" SortExpression="Contact" />
                 <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
             </Columns>
-        </asp:GridView>
+        </asp:GridView></p>
     </form>
     </body>
 </html>
