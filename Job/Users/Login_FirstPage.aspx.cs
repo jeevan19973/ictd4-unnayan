@@ -31,7 +31,7 @@ public partial class Job_Users_Login_FirstPage : System.Web.UI.Page
             if (comm.ExecuteScalar().ToString().Equals("1"))
             {
                 Session["Username"] = TextBox_Username.Text;
-                Response.Redirect("WelcomeUser.aspx");
+                Response.Redirect("~/Job/Users/WelcomeUser.aspx");
             }
             else
                 Label_Error.Visible = true;
@@ -87,7 +87,7 @@ public partial class Job_Users_Login_FirstPage : System.Web.UI.Page
             comm.Parameters.AddWithValue("@Skill", skill);
             GridView_UserData.DataSource = comm.ExecuteReader();
             GridView_UserData.DataBind();
-            
+
         }
         catch (Exception insertError)
         {
@@ -105,6 +105,10 @@ public partial class Job_Users_Login_FirstPage : System.Web.UI.Page
     }
     protected void Button_Advertise_Click(object sender, EventArgs e)
     {
-        Response.Redirect("AdvertiserInfo.aspx");
+        Response.Redirect("~/Job/Users/AdvertiserInfo.aspx");
+    }
+    protected void Button_CareerAdvice_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("CareerAdvice.aspx");
     }
 }

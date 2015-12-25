@@ -29,8 +29,8 @@ public partial class Job_Users_AdvertiserInfo : System.Web.UI.Page
             comm.Parameters.AddWithValue("@Skills", Label_SkillsSet.Text);
             comm.ExecuteNonQuery();
            // Session["UserName"] = TextBox_Usn.Text;
-            
-            Response.Redirect("Advertisement.aspx");
+
+            Response.Redirect("~/Job/Users/Advertisement.aspx");
             
            
         }

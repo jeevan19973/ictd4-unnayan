@@ -41,8 +41,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button_JobApplication" runat="server" OnClick="Button_JobApplication_Click" Text="Work I can do" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button_CareerAdvice" runat="server" OnClick="Button_CareerAdvice_Click" Text="Get Some Career Advice" />
-        </p>
+            </p>
     </form>
 </body>
 </html>

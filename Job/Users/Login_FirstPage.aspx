@@ -79,6 +79,8 @@
         </div>
         <p style="margin-left: 520px">
             <asp:Button ID="Button_Advertise" runat="server" OnClick="Button_Advertise_Click" Text="Advertise" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button_CareerAdvice" runat="server" OnClick="Button_CareerAdvice_Click" Text="Get Some Career Advice" />
         </p>
         <p class="auto-style5"><strong>People with selcted skills are shown here</strong><asp:GridView ID="GridView_UserData" runat="server" AutoGenerateColumns="False" DataKeyNames="Username"  >
             <Columns>
