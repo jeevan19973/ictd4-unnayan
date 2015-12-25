@@ -17,7 +17,8 @@ public partial class Job_Users_WelcomeUser : System.Web.UI.Page
     protected void Button_Profile_Click(object sender, EventArgs e)
     {
         //TODO : MAKE THIS PAGE
-        Response.Redirect("~/Job/Users/UserProfile.aspx");
+        Response.Write("Page under construction");
+        //Response.Redirect("~/Job/Users/UserProfile.aspx");
     }
     protected void Button_JobApplication_Click(object sender, EventArgs e)
     {
