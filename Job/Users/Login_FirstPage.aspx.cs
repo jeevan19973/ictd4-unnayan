@@ -111,4 +111,9 @@ public partial class Job_Users_Login_FirstPage : System.Web.UI.Page
     {
         Response.Redirect("CareerAdvice.aspx");
     }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        //Registration is required only for villagers who are looking for jobs and not for advertisers
+        Response.Redirect("~/Job/Register_Job.aspx");
+    }
 }

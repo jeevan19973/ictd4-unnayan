@@ -27,4 +27,8 @@ public partial class _Default : System.Web.UI.Page
     {
         Response.Redirect("media_photo.aspx");
     }
+    protected void ImageButton5_Click1(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("~/Job/Users/Login_FirstPage.aspx");
+    }
 }

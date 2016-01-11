@@ -56,7 +56,12 @@
             </tr>
         </table>
     <p class="auto-style5">
-        <strong>Search for Employess</strong></p>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Not a User:Register" />
+        </p>
+        <p class="auto-style5">
+            &nbsp;</p>
+        <p class="auto-style5">
+            <strong>Search for Employess</strong></p>
      <div>
             <asp:ImageButton ID="ImageButton_Fishing" runat="server" Height="150px" ImageUrl="~/images/Job_Skills/download.jpg" Width="150px" OnClick="Button_Fishing_Click" />
             <asp:ImageButton ID="ImageButton_Handicraft" runat="server" Height="150px" ImageUrl="~/images/Job_Skills/images.jpg" Width="150px" OnClick="Button_Handicraft_Click" />

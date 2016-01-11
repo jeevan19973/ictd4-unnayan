@@ -101,4 +101,8 @@ public partial class Job_Register_Job : System.Web.UI.Page
         comm.ExecuteNonQuery();
         conn.Close();
     }*/
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Job/Users/Login_FirstPage.aspx");
+    }
 }

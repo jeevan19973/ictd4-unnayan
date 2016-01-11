@@ -47,7 +47,7 @@
     <div>
     
         <div class="auto-style6">
-            <span class="auto-style7"><strong>Create a new account here..................</strong></span><br />
+            &nbsp;<span class="auto-style7"><strong>Create a new account here..................</strong></span><br />
             <br />
         </div>
         <table class="auto-style1">
@@ -57,7 +57,7 @@
                     <asp:TextBox ID="TextBox_Usn" runat="server" Width="200px"  ></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Usn" runat="server" ControlToValidate="TextBox_Usn" CssClass="auto-style5" ErrorMessage="Username is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Usn" runat="server" ControlToValidate="TextBox_Usn" CssClass="auto-style5" ErrorMessage="Username is required" ValidationGroup="req"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -66,7 +66,7 @@
                     <asp:TextBox ID="TextBox_Pass" runat="server" TextMode="Password" Width="200px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Pass" runat="server" ControlToValidate="TextBox_Pass" CssClass="auto-style5" ErrorMessage="Password is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Pass" runat="server" ControlToValidate="TextBox_Pass" CssClass="auto-style5" ErrorMessage="Password is required" ValidationGroup="req"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -75,7 +75,7 @@
                     <asp:TextBox ID="TextBox_Village" runat="server" Width="200px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Village" runat="server" ControlToValidate="TextBox_Village" CssClass="auto-style5" ErrorMessage="Village name is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Village" runat="server" ControlToValidate="TextBox_Village" CssClass="auto-style5" ErrorMessage="Village name is required" ValidationGroup="req"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -84,7 +84,7 @@
                     <asp:TextBox ID="TextBox_Contact" runat="server" Width="200px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Contact" runat="server" ControlToValidate="TextBox_Contact" CssClass="auto-style5" ErrorMessage="Contact Number is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Contact" runat="server" ControlToValidate="TextBox_Contact" CssClass="auto-style5" ErrorMessage="Contact Number is required" ValidationGroup="req"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -93,7 +93,7 @@
                     <asp:TextBox ID="TextBox_Address" runat="server" Width="200px"></asp:TextBox>
                 </td>
                 <td class="auto-style10">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Address" runat="server" ControlToValidate="TextBox_Address" CssClass="auto-style5" ErrorMessage="Address is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator_Address" runat="server" ControlToValidate="TextBox_Address" CssClass="auto-style5" ErrorMessage="Address is required" ValidationGroup="req"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -107,10 +107,11 @@
     </div>
         <div style="margin-left: 160px">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button_RegForm_Submit" runat="server"  OnClick="Button_RegForm_Submit_Click" Text="Submit" Width="100px" />
+            <asp:Button ID="Button_RegForm_Submit" runat="server"  OnClick="Button_RegForm_Submit_Click" Text="Submit" Width="100px" ValidationGroup="req" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="Label_Usn" runat="server" Visible="False">It seems that the username is already taken, please choose another username</asp:Label>
         </div>
+        <asp:Button ID="Button1" runat="server" CausesValidation="False" OnClick="Button1_Click" Text="Already a User" />
     </form>
 </body>
 </html>

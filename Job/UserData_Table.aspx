@@ -9,15 +9,14 @@
 <body>
     <form id="form1" runat="server">
         <asp:SqlDataSource ID="SqlDataSource_Job_Registration" runat="server" ConnectionString="<%$ ConnectionStrings:Job_Registration_ConnectionString %>" SelectCommand="SELECT * FROM [Job_UserData]"></asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource_Job_Registration" GridLines="Horizontal">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource_Job_Registration" GridLines="Horizontal" DataKeyNames="Username">
             <AlternatingRowStyle BackColor="#F7F7F7" />
             <Columns>
-                <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="Username" />
+                <asp:BoundField DataField="Username" HeaderText="Username" SortExpression="Username" ReadOnly="True" />
                 <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" />
                 <asp:BoundField DataField="Village" HeaderText="Village" SortExpression="Village" />
                 <asp:BoundField DataField="Contact" HeaderText="Contact" SortExpression="Contact" />
                 <asp:BoundField DataField="Address" HeaderText="Address" SortExpression="Address" />
-                <asp:BoundField DataField="Occupation" HeaderText="Occupation" SortExpression="Occupation" />
             </Columns>
             <FooterStyle BackColor="#B5C7DE" ForeColor="#4A3C8C" />
             <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#F7F7F7" />

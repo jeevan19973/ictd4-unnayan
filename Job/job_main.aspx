@@ -49,7 +49,8 @@
                             <br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Job/job_organisation.aspx">স্থানীয় কর্মসংস্থান ( অনান্য )</asp:HyperLink>
-                            &nbsp;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/images/Search_AdvertiseForJobs.jpg" OnClick="ImageButton5_Click1" />
+                            <br />
                             <br />
                             <br />
                             <br />
