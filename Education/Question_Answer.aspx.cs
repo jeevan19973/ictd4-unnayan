@@ -58,10 +58,12 @@ public partial class Education_Question_Answer : System.Web.UI.Page
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "insert into FileInformation(FileName,FileType,FileData) values(@Name,@Type,@Data)";
+                cmd.CommandText = "insert into FileInformation(FileName,FileType,FileData,Keyword,Comments) values(@Name,@Type,@Data,@Keyword,@Comments)";
                 cmd.Parameters.AddWithValue("@Name", filename);
                 cmd.Parameters.AddWithValue("@Type", "application/word");
                 cmd.Parameters.AddWithValue("@Data", size);
+                cmd.Parameters.AddWithValue("@Keyword", Keyword.Text);
+                cmd.Parameters.AddWithValue("@Comments", Comments.Text);
                 cmd.Connection = con;
                 con.Open();
                 cmd.ExecuteNonQuery();

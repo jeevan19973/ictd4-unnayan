@@ -15,14 +15,20 @@
         </div>
         <div>
             <asp:FileUpload ID="fileUpload1" runat="server" /><br />
+            <asp:TextBox ID="Keyword" runat="server"></asp:TextBox>
+&nbsp;Quesion keyword<br />
+            <asp:TextBox ID="Comments" runat="server" TextMode="MultiLine"></asp:TextBox>
+            Comments<br />
             <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click" />
         </div>
         <div>
-            <asp:GridView ID="gvDetails" runat="server" AutoGenerateColumns="false" DataKeyNames="Id">
+            <asp:GridView ID="gvDetails" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" >
                 <HeaderStyle BackColor="#df5015" Font-Bold="true" ForeColor="White" />
                 <Columns>
                     <asp:BoundField DataField="Id" HeaderText="Id" />
-                    <asp:BoundField DataField="FileName" HeaderText="FileName" />
+                    <asp:BoundField DataField="FileName" HeaderText="FileName" ItemStyle-Width="300px"/>
+                    <asp:BoundField DataField="Keyword" HeaderText="Keyword" ItemStyle-Width="50px"/>
+                    <asp:BoundField DataField="Comments" HeaderText="Comments" />
                     <asp:TemplateField HeaderText="FilePath">
                         <ItemTemplate>
                             <asp:LinkButton ID="lnkDownload" runat="server" Text="Download" OnClick="lnkDownload_Click"></asp:LinkButton>
