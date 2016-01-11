@@ -74,10 +74,11 @@ public partial class Job_Users_AdvertiserInfo : System.Web.UI.Page
     }
     protected void AddJobsToAdvertiser(String skill)
     {
-        Label_AlreadyExists.Visible = false;
+        //Label_AlreadyExists.Visible = false;
         if (Label_SkillsSet.Text.Contains(skill))
         {
-            Label_AlreadyExists.Visible = true;
+            //Label_AlreadyExists.Visible = true;
+            Label_SkillsSet.Text = Label_SkillsSet.Text.Replace(skill,"");
             return;
         }
         Label_SkillsSet.Text = Label_SkillsSet.Text + skill + " ";

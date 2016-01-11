@@ -77,13 +77,33 @@ public partial class Job_Users_UserJobProfile : System.Web.UI.Page
     }
     protected void addSkillTo_SkillsDatabase(String skill)
     {
-        Label_AlreadyExists.Visible = false;
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+      //  Label_AlreadyExists.Visible = false;
         if (Label_SkillsSet.Text.Contains(skill))
         {
-            Label_AlreadyExists.Visible = true;
+            try
+            {
+                String insert_query = "DELETE FROM Skills WHERE Username = @Usn And Skill = @Skill";
+                conn.Open();
+                SqlCommand comm = new SqlCommand(insert_query, conn);
+                comm.Parameters.AddWithValue("@Usn", Session["Username"].ToString());
+                comm.Parameters.AddWithValue("@Skill", skill);
+                comm.ExecuteNonQuery();
+            }
+            catch (Exception insertError)
+            {
+                Response.Write(insertError.ToString());
+            }
+            finally
+            {
+
+                if (conn != null)
+                    conn.Close();
+                Label_SkillsSet.Text = Label_SkillsSet.Text.Replace(skill,"");
+            }
             return;
         }
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+       
         try
         {
             String insert_query = "INSERT into Skills VALUES (@Usn,@Skill)";

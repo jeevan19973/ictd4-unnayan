@@ -27,7 +27,11 @@
         </div>
 
         <div class="auto-style1">
-            <strong style="text-align: left">Work you can do 
+            <strong style="text-align: left">
+            <asp:HyperLink ID="Back" runat="server"  NavigateUrl="~\Job\Users\WelcomeUser.aspx" style="text-align: left">Back</asp:HyperLink>
+            <br />
+            <br />
+            Work you can do 
             </strong>
             <br />
             <asp:Label ID="Label_SkillsSet" runat="server"></asp:Label>
