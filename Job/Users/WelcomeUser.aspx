@@ -37,7 +37,7 @@
             &nbsp;
         <p>
             &nbsp;
-            <asp:Button ID="Button_Profile" runat="server" Text="Profile" OnClick="Button_Profile_Click" />
+            <asp:Button ID="Button_Profile" runat="server" Text="Profile" OnClick="Button_Profile_Click" Visible="False" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button_JobApplication" runat="server" OnClick="Button_JobApplication_Click" Text="Work I can do" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
