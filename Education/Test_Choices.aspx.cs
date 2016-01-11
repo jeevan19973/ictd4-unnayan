@@ -13,7 +13,7 @@ public partial class Education_Test_Choices : System.Web.UI.Page
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
-        if (Language.Text.Equals("English") && Class.Text.Equals("4"))
+        //if (Language.Text.Equals("English") && Class.Text.Equals("4"))
             Response.Redirect("~/Education/SampleTest.aspx");
     }
 }

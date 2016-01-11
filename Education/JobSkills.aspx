@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
 
-            <iframe src="https://www.sdi.gov.in/en-US/Pages/CandidateRegistration.aspx" style="width: 100%; height: 545px" id="I1" name="I1"></iframe>
+            <iframe src="https://www.sdi.gov.in/en-US/Pages/CandidateRegistration.aspx" style="width: 75%; height: 545px" id="I1" name="I1"></iframe>
 
         </div>
     </form>

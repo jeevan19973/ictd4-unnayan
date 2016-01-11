@@ -47,15 +47,17 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a href="education_rabi.aspx"><asp:Image ID="Image4" runat="server" ImageUrl="~/images/ICT4D png/RBU-LOGO.png" /></a>
                             &nbsp;
                             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Education/education_rabi.aspx">রবীন্দ্র মুক্ত বিদ্যালয় </asp:HyperLink>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ImageButton5" runat="server" ImageUrl="~/images/learningAndStudying.jpg" OnClick="ImageButton5_Click1" />
                             <br />
                             <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="education_rash.aspx"><asp:Image ID="Image5" runat="server" Height="129px" ImageUrl="~/images/ICT4D png/NIOS.png" Width="127px" /></a>
-                            &nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="education_rash.aspx"><asp:Image ID="Image5" runat="server" Height="129px" ImageUrl="~/images/ICT4D png/NIOS.png" Width="127px" />
+                            </a>&nbsp;&nbsp;&nbsp;
                             <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Education/education_rash.aspx">রাষ্ট্রীয় মুক্ত বিদ্যালয়ী শিক্ষা সংস্থান </asp:HyperLink>
                             &nbsp;<br />
                             <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="education_netaji.aspx"><asp:Image ID="Image6" runat="server" Height="122px" ImageUrl="~/images/ICT4D png/NSUB.png" Width="127px" /></a>
-                            &nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="education_netaji.aspx"><asp:Image ID="Image6" runat="server" Height="122px" ImageUrl="~/images/ICT4D png/NSUB.png" Width="127px" />
+                            </a>&nbsp;&nbsp;&nbsp;
                             <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Education/education_netaji.aspx"> নেতাজী সুভাষ মুক্ত বিশ্ববিদ্যালয়</asp:HyperLink>
                             <br />
                             <br />
@@ -70,9 +72,12 @@
                             <br />
                             <br />
                             <br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="education_gyandarshan.aspx"><asp:Image ID="Image7" runat="server" Height="57px" ImageUrl="~/images/ICT4D png/FormImages-gyandarshan.png" Width="131px" /></a>
-                            &nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="education_gyandarshan.aspx"><asp:Image ID="Image7" runat="server" Height="57px" ImageUrl="~/images/ICT4D png/FormImages-gyandarshan.png" Width="131px" />
+                            </a>&nbsp;&nbsp;
                             <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Education/education_gyandarshan.aspx">জ্ঞানদর্শন</asp:HyperLink>
+                            <br />
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <br />
                             <br />
                             <br />
@@ -81,6 +86,12 @@
                     </asp:Panel>
                     <br />
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style20">
+                    &nbsp;</td>
+                <td class="auto-style19">
+                    &nbsp;</td>
             </tr>
             </table>
     </asp:Content>

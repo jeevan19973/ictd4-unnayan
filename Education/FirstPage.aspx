@@ -6,23 +6,27 @@
 <head runat="server">
     <title></title>
 </head>
-<body style="font-weight: 700; font-size: x-large">
-    <form id="form1" runat="server">
+<body id="PageBody" style="font-weight: 700; font-size: x-large">
+    <form id="form1" runat="server" >
     <div>
     
         What do you want to do ?<br />
     
     </div>
-        <asp:Button ID="Button_StudySchool" runat="server" OnClick="Button_StudySchool_Click" Text="Study(for school)" />
+        <asp:ImageButton ID="Button_StudySchool" OnClick="Button_StudySchool_Click" runat="server"  ImageUrl="~/images/studyforschool.jpg"  />
         <br />
         <br />
-        <asp:Button ID="Button_Test" runat="server" Text="Take a test" OnClick="Button_Test_Click" />
+        <asp:ImageButton ID="Button_JobSkills" OnClick="Button_JobSkills_Click" runat="server" ImageUrl="~/images/searchforjob.jpg" />
         <br />
         <br />
-        <asp:Button ID="Button_JobSkills" runat="server" OnClick="Button_JobSkills_Click" Text="Learn some job skills" />
+        <asp:ImageButton ID="Button_Question" OnClick="Button_Question_Click" runat="server" ImageUrl="~/images/askAQueastion.jpg" />
         <br />
         <br />
-        <asp:Button ID="Button_Question" runat="server" OnClick="Button_Question_Click" Text="Ask  A Question" />
+        <asp:ImageButton ID="Button_Test" OnClick="Button_Test_Click" runat="server" ImageUrl="~/images/takeaTest.jpg" />
+        <br />
+        <br />
+        <br />
+        <br />
     </form>
 </body>
 </html>
