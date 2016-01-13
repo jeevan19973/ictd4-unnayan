@@ -198,7 +198,7 @@ public partial class home : System.Web.UI.Page
 
         int i = (int)val;
 
-        string url = "~/images/"+i+".png";
+        string url = "~/Weather_new/images/"+i+".png";
         im.ImageUrl = url;
         lb.Text = words[i];
       

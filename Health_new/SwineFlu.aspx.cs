@@ -20,7 +20,7 @@ public partial class Jaundice : System.Web.UI.Page
             Response.Write("<script>alert('Your File has been Submitted Succesfully..Wait for verification ');</script>");
         }
         else
-            Response.Write("<script>alert('No file choosen');</script>");
+            Response.Write("<script>alert('File not choosen !!! ');</script>");
 
     }
 }

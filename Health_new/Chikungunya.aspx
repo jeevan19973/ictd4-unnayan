@@ -88,7 +88,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style11">
-                            <asp:Image ID="Image6" runat="server" ImageUrl="~/images/causes-200x200.png" />
+                            <asp:Image ID="Image6" runat="server" ImageUrl="~/Health_new/images/causes-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Chikungunya is a virus that is transmitted by mosquitoes. Also known as CHIKV, the virus was first detected in 1952 in southern Tanzania. The name means “to become contorted” in the Kimakonde language. The name alludes to the stooped appearance of chikungunya sufferers with joint pain, which is one of the symptoms of the infection.
                             <br />
@@ -104,7 +104,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style12">
-                            <asp:Image ID="Image7" runat="server" ImageUrl="~/images/symptoms-200x200.png" />
+                            <asp:Image ID="Image7" runat="server" ImageUrl="~/Health_new/images/symptoms-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Chikungunya symptoms closely mirror those of the dengue fever, which can make diagnosis difficult. The most common symptom is joint aches and pains. The disease also causes the following symptoms:<br />
                             <asp:BulletedList ID="BulletedList1" runat="server">
@@ -126,7 +126,7 @@
                 <table class="auto-style3" style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                     <tr>
                         <td class="auto-style13">
-                            <asp:Image ID="Image8" runat="server" ImageUrl="~/images/treatments-200x200.png" />
+                            <asp:Image ID="Image8" runat="server" ImageUrl="~/Health_new/images/treatments-200x200.png" />
                         </td>
                         <td>Physicians diagnose chikungunya based on symptoms. A blood test can also reveal higher than normal amounts of antibodies, which can indicate a virus. Sometimes, these are not detected until a patient has had the virus for four to five days, according to the European Centre for Disease Prevention and Control.
                             <br />
@@ -142,7 +142,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style14">
-                            <asp:Image ID="Image9" runat="server" ImageUrl="~/images/prevention-200x200.png" />
+                            <asp:Image ID="Image9" runat="server" ImageUrl="~/Health_new/images/prevention-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">To prevent mosquito bites, you can take the following steps:
                             <br />
@@ -166,7 +166,7 @@
             <table class="auto-style3">
                 <tr>
                     <td>
-                        <asp:Image ID="Image10" runat="server" ImageUrl="~/images/docter-200x200.png" />
+                        <asp:Image ID="Image10" runat="server" ImageUrl="~/Health_new/images/docter-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel1" runat="server" Height="214px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">
@@ -227,7 +227,7 @@
             <table class="auto-style3">
                 <tr>
                     <td>
-                        <asp:Image ID="Image11" runat="server" ImageUrl="~/images/people-200x200.png" />
+                        <asp:Image ID="Image11" runat="server" ImageUrl="~/Health_new/images/people-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel2" runat="server" Height="216px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">

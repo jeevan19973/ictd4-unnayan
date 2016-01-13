@@ -88,7 +88,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style11">
-                            <asp:Image ID="Image6" runat="server" ImageUrl="~/images/causes-200x200.png" />
+                            <asp:Image ID="Image6" runat="server" ImageUrl="~/Health_new/images/causes-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Jaundice is the medical term that describes yellowing of the skin and eyes. This condition forms when there is too much bilirubin in your system. Bilirubin is a yellow pigment that is formed by the breakdown of dead red blood cells in the liver. Normally, the liver gets rid of bilirubin along with old red blood cells.</td>
                     </tr>
@@ -101,7 +101,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style12">
-                            <asp:Image ID="Image7" runat="server" ImageUrl="~/images/symptoms-200x200.png" />
+                            <asp:Image ID="Image7" runat="server" ImageUrl="~/Health_new/images/symptoms-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                             <asp:BulletedList ID="BulletedList1" runat="server">
@@ -121,7 +121,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style13">
-                            <asp:Image ID="Image8" runat="server" ImageUrl="~/images/treatments-200x200.png" />
+                            <asp:Image ID="Image8" runat="server" ImageUrl="~/Health_new/images/treatments-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Your doctor will first conduct blood tests to determine the cause of your jaundice. A blood test can not only determine the total amount of bilirubin in your body, but it can also help detect indicators of other diseases such as hepatitis.
                             <br />
@@ -140,7 +140,7 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style16">
-                        <asp:Image ID="Image10" runat="server" ImageUrl="~/images/docter-200x200.png" />
+                        <asp:Image ID="Image10" runat="server" ImageUrl="~/Health_new/images/docter-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel1" runat="server" Height="231px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">
@@ -199,7 +199,7 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style18">
-                        <asp:Image ID="Image11" runat="server" ImageUrl="~/images/people-200x200.png" />
+                        <asp:Image ID="Image11" runat="server" ImageUrl="~/Health_new/images/people-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel2" runat="server" Height="221px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">

@@ -98,7 +98,7 @@
                     <br />
                     Malaria<br />
                     <br />
-                    <asp:Image ID="Image1" runat="server" Height="123px" ImageUrl="~/images/mosquito.jpg" Width="197px" />
+                    <asp:Image ID="Image1" runat="server" Height="123px" ImageUrl="~/Health_new/images/mosquito.jpg" Width="197px" />
                     <br />
                 </td>
                 <td class="auto-style13" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #EFEFEF; border-right-style: solid; border-left-style: solid; border-right-width: medium; border-left-width: medium; border-right-color: #33CCFF; border-left-color: #33CCFF;">
@@ -123,7 +123,7 @@
                 </td>
                 <td class="auto-style10" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #EFEFEF">
                     <br />
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Malaria.aspx">More Info</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Health_new/Malaria.aspx">More Info</asp:HyperLink>
                     <br />
                 </td>
             </tr>
@@ -132,7 +132,7 @@
                     <br />
                     Jaundice<br />
                     <br />
-                    <asp:Image ID="Image2" runat="server" Height="123px" ImageUrl="~/images/jaundice.JPG" Width="197px" />
+                    <asp:Image ID="Image2" runat="server" Height="123px" ImageUrl="~/Health_new/images/jaundice.JPG" Width="197px" />
                     <br />
                 </td>
                 <td class="auto-style19" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #EFEFEF; border-right-style: solid; border-left-style: solid; border-right-width: medium; border-left-width: medium; border-right-color: #33CCFF; border-left-color: #33CCFF;">
@@ -146,7 +146,7 @@
                 </td>
                 <td class="auto-style9" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #EFEFEF">
                     <br />
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Jaundice.aspx">More Info</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Health_new/Jaundice.aspx">More Info</asp:HyperLink>
                     <br />
                 </td>
             </tr>
@@ -155,7 +155,7 @@
                     <br />
                     Chikungunya<br />
                     <br />
-                    <asp:Image ID="Image3" runat="server" Height="123px" ImageUrl="~/images/mosquito.jpg" Width="197px" />
+                    <asp:Image ID="Image3" runat="server" Height="123px" ImageUrl="~/Health_new/images/mosquito.jpg" Width="197px" />
                     <br />
                 </td>
                 <td class="auto-style19" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #EFEFEF; border-right-style: solid; border-left-style: solid; border-right-width: medium; border-left-width: medium; border-right-color: #33CCFF; border-left-color: #33CCFF;">
@@ -169,7 +169,7 @@
                 </td>
                 <td class="auto-style9" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #EFEFEF">
                     <br />
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Chikungunya.aspx">More Info</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Health_new/Chikungunya.aspx">More Info</asp:HyperLink>
                     <br />
                 </td>
             </tr>
@@ -178,7 +178,7 @@
                     <br />
                     Typhoid<br />
                     <br />
-                    <asp:Image ID="Image4" runat="server" Height="123px" ImageUrl="~/images/typhoid.jpg" Width="197px" />
+                    <asp:Image ID="Image4" runat="server" Height="123px" ImageUrl="~/Health_new/images/typhoid.jpg" Width="197px" />
                     <br />
                 </td>
                 <td class="auto-style12" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #EFEFEF; border-right-style: solid; border-left-style: solid; border-right-width: medium; border-left-width: medium; border-right-color: #33CCFF; border-left-color: #33CCFF;">
@@ -199,7 +199,7 @@
                 </td>
                 <td class="auto-style9" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #EFEFEF">
                     <br />
-                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Typhoid.aspx">More Info</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Health_new/Typhoid.aspx">More Info</asp:HyperLink>
                     <br />
                 </td>
             </tr>
@@ -208,7 +208,7 @@
                     <br />
                     Swine Flu<br />
                     <br />
-                    <asp:Image ID="Image5" runat="server" Height="123px" ImageUrl="~/images/swine_flu.jpg" Width="197px" />
+                    <asp:Image ID="Image5" runat="server" Height="123px" ImageUrl="~/Health_new/images/swine_flu.jpg" Width="197px" />
                     <br />
                 </td>
                 <td class="auto-style4" style="border-right-style: solid; border-right-width: medium; border-right-color: #33CCFF; border-left-style: solid; border-left-width: medium; border-left-color: #33CCFF; border-bottom-style: solid; border-bottom-width: medium; border-bottom-color: #33CCFF;">
@@ -230,7 +230,7 @@
                 </td>
                 <td class="auto-style9">
                     <br />
-                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/SwineFlu.aspx">More Info</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Health_new/SwineFlu.aspx">More Info</asp:HyperLink>
                     <br />
                 </td>
             </tr>

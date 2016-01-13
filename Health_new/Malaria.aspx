@@ -91,7 +91,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style11">
-                            <asp:Image ID="Image6" runat="server" ImageUrl="~/images/causes-200x200.png" />
+                            <asp:Image ID="Image6" runat="server" ImageUrl="~/Health_new/images/causes-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Malaria is a life-threatening disease. It’s typically transmitted through the bite of an infected Anopheles mosquito. Infected mosquitoes carry the Plasmodium parasite. When this mosquito bites you, the parasite is released into your bloodstream. Once the parasites are inside your body, they travel to the liver, where they mature.
                             <br />
@@ -106,7 +106,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td>
-                            <asp:Image ID="Image7" runat="server" ImageUrl="~/images/symptoms-200x200.png" />
+                            <asp:Image ID="Image7" runat="server" ImageUrl="~/Health_new/images/symptoms-200x200.png" />
                         </td>
                         <td>
                             <asp:BulletedList ID="BulletedList1" runat="server" BulletStyle="Disc" Font-Names="Segoe UI,Tahoma,Geneva,Verdana,sans-serif" Font-Size="Large">
@@ -133,7 +133,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style12">
-                            <asp:Image ID="Image8" runat="server" ImageUrl="~/images/treatments-200x200.png" />
+                            <asp:Image ID="Image8" runat="server" ImageUrl="~/Health_new/images/treatments-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Early diagnosis of malaria is critical for a patient&#39;s recovery, any individual showing signs of malaria should be tested immediately. Your doctor will be able to diagnose malaria. During your appointment, your doctor will review your health history, including any recent travel to tropical climates. A physical exam will also be performed. Your doctor will be able to determine if you have an enlarged spleen or liver. If you have symptoms of malaria, your doctor may order additional blood tests to confirm your diagnosis.
                             <br />
@@ -148,7 +148,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style13">
-                            <asp:Image ID="Image9" runat="server" ImageUrl="~/images/prevention-200x200.png" />
+                            <asp:Image ID="Image9" runat="server" ImageUrl="~/Health_new/images/prevention-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Talk to your doctor about long-term prevention if you live in an area where malaria is common. 
                             <br />
@@ -170,7 +170,7 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style16">
-                        <asp:Image ID="Image10" runat="server" ImageUrl="~/images/docter-200x200.png" />
+                        <asp:Image ID="Image10" runat="server" ImageUrl="~/Health_new/images/docter-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel1" runat="server" Height="219px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">
@@ -236,7 +236,7 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style18">
-                        <asp:Image ID="Image11" runat="server" ImageUrl="~/images/people-200x200.png" />
+                        <asp:Image ID="Image11" runat="server" ImageUrl="~/Health_new/images/people-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel2" runat="server" Height="225px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">

@@ -15,13 +15,13 @@ public partial class home : System.Web.UI.Page
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
        
-        Response.Redirect("seasonal.aspx");
+        Response.Redirect("~/health_new/seasonal.aspx");
     }
 
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
     {
        
-            Response.Redirect("diseases.aspx");
+            Response.Redirect("~/health_new/diseases.aspx");
     }
 
 

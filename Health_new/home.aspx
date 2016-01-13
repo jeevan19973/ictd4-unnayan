@@ -58,7 +58,7 @@
                                 : </td>
                             <td class="auto-style6">&nbsp;&nbsp;<br />
                                 &nbsp;&nbsp;
-                                <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" PostBackUrl="~/seasonal.aspx" ImageUrl="~/images/rsz_picture1.png" />
+                                <asp:ImageButton ID="ImageButton1" runat="server" OnClick="ImageButton1_Click" PostBackUrl="~/Health_new/seasonal.aspx" ImageUrl="~/Health_new/images/Picture1.png" Height="147px" Width="152px" />
                                 <br />
                             </td>
                         </tr>
@@ -71,7 +71,7 @@
                             <td class="auto-style6">
                                 <br />
                                 &nbsp;&nbsp;
-                                <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" PostBackUrl="~/diseases.aspx" ImageUrl="~/images/rsz_picture2.png" />
+                                <asp:ImageButton ID="ImageButton2" runat="server" OnClick="ImageButton2_Click" PostBackUrl="~/Health_new/diseases.aspx" ImageUrl="~/Health_new/images/Picture2.png" Height="149px" Width="150px" />
                                 <br />
                             </td>
                         </tr>
@@ -92,7 +92,7 @@
                     <br />
                     Get details like info / no.of beds / appointment
                     <br />
-                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/rsz_services.jpg" />
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Health_new/images/rsz_services.jpg" />
                     <br />
                     <br />
                 </td>

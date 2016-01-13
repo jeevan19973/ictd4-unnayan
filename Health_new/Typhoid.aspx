@@ -92,7 +92,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style13">
-                            <asp:Image ID="Image6" runat="server" ImageUrl="~/images/causes-200x200.png" />
+                            <asp:Image ID="Image6" runat="server" ImageUrl="~/Health_new/images/causes-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Typhoid fever is an acute illness associated with fever caused by the Salmonella typhi bacteria. It can also be caused by Salmonella paratyphi, a related bacterium that usually causes a less severe illness. The bacteria are deposited in water or food by a human carrier and are then spread to other people in the area.
                             <br />
@@ -108,7 +108,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td>
-                            <asp:Image ID="Image7" runat="server" ImageUrl="~/images/symptoms-200x200.png" />
+                            <asp:Image ID="Image7" runat="server" ImageUrl="~/Health_new/images/symptoms-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Symptoms that are associated with&nbsp; typhoid are:<br />
                             <asp:BulletedList ID="BulletedList1" runat="server">
@@ -132,7 +132,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style11">
-                            <asp:Image ID="Image8" runat="server" ImageUrl="~/images/treatments-200x200.png" />
+                            <asp:Image ID="Image8" runat="server" ImageUrl="~/Health_new/images/treatments-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">If you suspect that you have typhoid, your doctor will ask about your symptoms and your medical history.
                             <br />
@@ -149,7 +149,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style12">
-                            <asp:Image ID="Image9" runat="server" ImageUrl="~/images/prevention-200x200.png" />
+                            <asp:Image ID="Image9" runat="server" ImageUrl="~/Health_new/images/prevention-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Suggestions for prevention include:
                             <br />
@@ -172,7 +172,7 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style16">
-                        <asp:Image ID="Image10" runat="server" ImageUrl="~/images/docter-200x200.png" />
+                        <asp:Image ID="Image10" runat="server" ImageUrl="~/Health_new/images/docter-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel1" runat="server" Height="218px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">
@@ -229,7 +229,7 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style17">
-                        <asp:Image ID="Image11" runat="server" ImageUrl="~/images/people-200x200.png" />
+                        <asp:Image ID="Image11" runat="server" ImageUrl="~/Health_new/images/people-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel2" runat="server" Height="211px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">

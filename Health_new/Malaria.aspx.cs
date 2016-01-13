@@ -17,7 +17,10 @@ public partial class Malaria : System.Web.UI.Page
         {
             string filename = Server.MapPath("~/uploads") + FileUpload1.FileName;
             FileUpload1.PostedFile.SaveAs(filename);
+            Response.Write("<script>alert('Your File has been Submitted Succesfully..Wait for verification ');</script>");
         }
-        Response.Write("<script>alert('Your File has been Submitted Succesfully..Wait for verification ');</script>");
+        else
+            Response.Write("<script>alert('File not choosen !!! ');</script>");
+
     }
 }

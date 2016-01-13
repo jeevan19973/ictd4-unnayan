@@ -94,7 +94,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style11">
-                            <asp:Image ID="Image6" runat="server" ImageUrl="~/images/causes-200x200.png" />
+                            <asp:Image ID="Image6" runat="server" ImageUrl="~/Health_new/images/causes-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Swine flu, also known as the H1N1 virus, is a relatively new strain of an influenza virus that causes symptoms similar to the regular flu. It originated in pigs, but is spread primarily from person to person.
                             <br />
@@ -113,7 +113,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style12">
-                            <asp:Image ID="Image7" runat="server" ImageUrl="~/images/symptoms-200x200.png" />
+                            <asp:Image ID="Image7" runat="server" ImageUrl="~/Health_new/images/symptoms-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">The symptoms of swine flu are very much like those of regular influenza. They include:<br />
                             <asp:BulletedList ID="BulletedList1" runat="server">
@@ -138,7 +138,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style13">
-                            <asp:Image ID="Image8" runat="server" ImageUrl="~/images/treatments-200x200.png" />
+                            <asp:Image ID="Image8" runat="server" ImageUrl="~/Health_new/images/treatments-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Your doctor can make a diagnosis by sampling fluid from your body. To take a sample, your doctor or a nurse may swab your nose or throat.
                             <br />
@@ -160,7 +160,7 @@
                 <table class="auto-style3">
                     <tr>
                         <td class="auto-style14">
-                            <asp:Image ID="Image9" runat="server" ImageUrl="~/images/prevention-200x200.png" />
+                            <asp:Image ID="Image9" runat="server" ImageUrl="~/Health_new/images/prevention-200x200.png" />
                         </td>
                         <td style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">The best way to prevent swine flu is to get a yearly flu vaccination. Other easy ways to prevent swine flu include:<br />
                             <asp:BulletedList ID="BulletedList2" runat="server">
@@ -181,7 +181,7 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style15">
-                        <asp:Image ID="Image10" runat="server" ImageUrl="~/images/docter-200x200.png" />
+                        <asp:Image ID="Image10" runat="server" ImageUrl="~/Health_new/images/docter-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel1" runat="server" Height="275px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">
@@ -240,7 +240,7 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style16">
-                        <asp:Image ID="Image11" runat="server" ImageUrl="~/images/people-200x200.png" />
+                        <asp:Image ID="Image11" runat="server" ImageUrl="~/Health_new/images/people-200x200.png" />
                     </td>
                     <td><asp:Panel ID="Panel2" runat="server" Height="233px" Width="450px" ScrollBars="Vertical">
                 <table class="auto-style3">

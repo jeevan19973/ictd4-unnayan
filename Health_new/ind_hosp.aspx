@@ -44,7 +44,7 @@
                     ------------------------------------------------<br />
                 </td>
                 <td>
-                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/rsz_1hospital.png" />
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Health_new/images/rsz_1hospital.png" />
 &nbsp;</td>
             </tr>
         </table>
