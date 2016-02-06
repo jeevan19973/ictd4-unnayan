@@ -19,7 +19,7 @@ public partial class Job_Users_Login_FirstPage : System.Web.UI.Page
     protected void Button_Login_Click(object sender, EventArgs e)
     {
         Label_Error.Visible = false;
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
         try
         {
@@ -77,7 +77,7 @@ public partial class Job_Users_Login_FirstPage : System.Web.UI.Page
     protected void findUserfrom_SkillsDatabase(String skill)
     {
         SqlDataReader rdr = null;
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         try
         {
             //String choose_query = "Select Username FROM Skills where skill = @Skill";

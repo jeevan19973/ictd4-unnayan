@@ -13,7 +13,7 @@ public partial class Job_Users_Advertisement : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             try
             {
                 //String choose_query = "Select Username FROM Skills where skill = @Skill";
@@ -71,7 +71,7 @@ public partial class Job_Users_Advertisement : System.Web.UI.Page
     {
         SqlDataReader rdr = null;
 
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         try
         {
             //String choose_query = "Select Username FROM Skills where skill = @Skill";

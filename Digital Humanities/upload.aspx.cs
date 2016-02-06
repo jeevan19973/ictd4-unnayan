@@ -43,7 +43,7 @@ public partial class upload : System.Web.UI.Page
                     string filepath = Server.MapPath("~/Upload images/" + Uploadim.FileName);
                     Uploadim.SaveAs(filepath);
 
-                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["UploadInfoConnectionString"].ConnectionString);
+                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                     conn.Open();
                     string uploadinp = "Insert into [upload] (Name,Description,uploadpath) values(@a,@b,@c)";
 

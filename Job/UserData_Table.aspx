@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:SqlDataSource ID="SqlDataSource_Job_Registration" runat="server" ConnectionString="<%$ ConnectionStrings:Job_Registration_ConnectionString %>" SelectCommand="SELECT * FROM [Job_UserData]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource_Job_Registration" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Job_UserData]"></asp:SqlDataSource>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource_Job_Registration" GridLines="Horizontal" DataKeyNames="Username">
             <AlternatingRowStyle BackColor="#F7F7F7" />
             <Columns>

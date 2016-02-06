@@ -24,7 +24,7 @@ public partial class Job_Register_Job : System.Web.UI.Page
             Label_Usn.Visible = true;
             return;
         }
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         try
         {
             String insert_query = "INSERT into Job_UserData VALUES (@Usn,@Pass,@Village,@Contact,@Address)";
@@ -60,7 +60,7 @@ public partial class Job_Register_Job : System.Web.UI.Page
     protected Boolean checkDupUser()
     {
         String ifExists = null;
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         try
         {
             String find_query = "SELECT count(*) from Job_UserData where lower(username) = lower(@Usn)";
@@ -94,7 +94,7 @@ public partial class Job_Register_Job : System.Web.UI.Page
 
    /* protected void Button_Delete(object sender, EventArgs e)
     {
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         String delete_query = "Delete from Job_UserData";
         conn.Open();
         SqlCommand comm = new SqlCommand(delete_query, conn);

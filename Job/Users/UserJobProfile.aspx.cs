@@ -17,7 +17,7 @@ public partial class Job_Users_UserJobProfile : System.Web.UI.Page
             Response.Redirect("Login_FirstPage.aspx");
         if (!IsPostBack)
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             SqlDataReader rdr = null;
             try
             {
@@ -77,7 +77,7 @@ public partial class Job_Users_UserJobProfile : System.Web.UI.Page
     }
     protected void addSkillTo_SkillsDatabase(String skill)
     {
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
       //  Label_AlreadyExists.Visible = false;
         if (Label_SkillsSet.Text.Contains(skill))
         {

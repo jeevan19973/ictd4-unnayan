@@ -15,7 +15,7 @@ public partial class Job_Users_AdvertiserInfo : System.Web.UI.Page
     }
     protected void Button_RegForm_Submit_Click(object sender, EventArgs e)
     {
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Job_Registration_ConnectionString"].ConnectionString);
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         try
         {
 
