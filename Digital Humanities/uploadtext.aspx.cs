@@ -24,13 +24,13 @@ public partial class uploadtext : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        if (TextBox1.Text == null) { Response.Write("Please share your thoughts"); }
+        if (TextBox1.Text == null || TextBox1.Text == "") { Response.Write("Please share your thoughts"); }
         else
         {
             Label l2 = new Label();
             Label1.Text = "";
             l2.Text = DateTime.Now.ToString();
-             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringuploadtext"].ConnectionString);
+             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
              conn.Open(); 
             string insert = "INSERT INTO [uptext] (Dateandtime,blogdata) VALUES (@date,@blog)";
              SqlCommand comm = new SqlCommand(insert, conn);

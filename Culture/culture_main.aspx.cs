@@ -11,4 +11,8 @@ public partial class _Default : System.Web.UI.Page
     {
 
     }
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("~/Digital Humanities/upload.aspx");
+    }
 }

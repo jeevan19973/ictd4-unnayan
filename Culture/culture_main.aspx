@@ -60,7 +60,11 @@
                             <br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Culture/culture_news.aspx">স্থানীয় খবর</asp:HyperLink>
-                            &nbsp;</div>
+                            &nbsp;<br />
+                            <br />
+                            <asp:ImageButton ID="ImageButton5" runat="server" Height="162px" ImageUrl="~/images/lolwa/upload.jpg" OnClick="ImageButton5_Click" Width="164px" />
+                            <br />
+                        </div>
                     </asp:Panel>
                     <br />
                 </td>
