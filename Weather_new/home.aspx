@@ -35,7 +35,6 @@
         <br />
         <asp:TextBox ID="TextBox1" runat="server" placeholder="City"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;
-        <asp:Label ID="LabelValidator" runat="server" ForeColor="#FF3300"></asp:Label>
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" />

@@ -10,55 +10,68 @@ using System.Web.UI.WebControls;
 
 public partial class home : System.Web.UI.Page
 {
+    String ip;
     protected void Page_Load(object sender, EventArgs e)
     {
         Panel1.Visible = false;
+        ip = Request.UserHostAddress;
     }
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        if (TextBox1.Text == "")
-            LabelValidator.Text = "*Enter name of the city";
-        else {
+        ip = "http://geoip.nekudo.com/api/14.139.194.12/en";
+        try
+        {
+            HttpWebRequest rqst = (HttpWebRequest)WebRequest.Create(ip);
+            rqst.Method = "GET";
 
-            string city = TextBox1.Text;
-            string url = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" +city+ "&mode=json&units=metric&cnt=7&appid=2de143494c0b295cca9337e1e96b00e0";
-            try {
-                HttpWebRequest rqst = (HttpWebRequest)WebRequest.Create(url);
-                rqst.Method = "GET";
+            HttpWebResponse resp = (HttpWebResponse)rqst.GetResponse();
 
-                HttpWebResponse resp = (HttpWebResponse)rqst.GetResponse();
+            Stream data = resp.GetResponseStream();
+            StreamReader reader = new StreamReader(data);
 
-                Stream data = resp.GetResponseStream();
-                StreamReader reader = new StreamReader(data);
+            string dat = reader.ReadToEnd();
+          
+            string lat = getLatitude(dat);
+            string lon = getLongitude(dat);
 
-                string json = reader.ReadToEnd();
+            string url = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lon + "&units=metric&cnt=7&mode=json&APPID=967fa00b2838569da3bf47451a64c072";
 
-                string city1 = GetCity(json);
+            rqst = (HttpWebRequest)WebRequest.Create(url);
+            rqst.Method = "GET";
 
-                string weather_data = json.Substring(json.IndexOf("list")+7,json.Length- json.IndexOf("list") - 10);
-                string temp_data = String.Copy(weather_data);
-                double[][] final_data = new double[7][];
+            resp = (HttpWebResponse)rqst.GetResponse();
 
-                for(int i = 0; i < 7; i++)
-                {
-                    final_data[i] = GetWeatherData(temp_data);
-                    temp_data = temp_data.Substring((int)final_data[i][3]);
-               }
-                ChangeUI(final_data);
-                Label29.Text = "City: "+city1;
-            }
-            catch (Exception ex)
+            data = resp.GetResponseStream();
+            reader = new StreamReader(data);
+
+            string json = reader.ReadToEnd();
+           
+            string city1 = GetCity(json);
+
+            string weather_data = json.Substring(json.IndexOf("list") + 7, json.Length - json.IndexOf("list") - 10);
+            string temp_data = String.Copy(weather_data);
+            double[][] final_data = new double[7][];
+
+            for (int i = 0; i < 7; i++)
             {
-                Response.Write(ex.StackTrace);
-               Response.Write("<script>alert('Error! Enter valid city name or check your internet conncetion');</script>");
+                final_data[i] = GetWeatherData(temp_data);
+                temp_data = temp_data.Substring((int)final_data[i][3]);
             }
+            ChangeUI(final_data);
+            Label29.Text = "City: " + city1;
         }
+        catch (Exception ex)
+        {
+            Response.Write(ex.StackTrace);
+            Response.Write("<script>alert('Error! Enter valid city name or check your internet conncetion');</script>");
+        }
+
     }
     protected string GetCity(string str)
     {
-        int pos = str.IndexOf("name")+7;
-        string str2 = str.Substring(pos,str.Length-pos);
+        int pos = str.IndexOf("name") + 7;
+        string str2 = str.Substring(pos, str.Length - pos);
         int pos2 = str2.IndexOf("\"");
         string final = str2.Substring(0, pos2);
 
@@ -71,12 +84,12 @@ public partial class home : System.Web.UI.Page
         for (int i = 0; i < 3; i++)
         {
             int pos = temp.IndexOf("}");
-            pos_final = pos_final + pos +1;
-            temp = temp.Substring(pos+1);
-     
+            pos_final = pos_final + pos + 1;
+            temp = temp.Substring(pos + 1);
+
         }
 
-        string data = str.Substring(0,pos_final);
+        string data = str.Substring(0, pos_final);
 
         double[] result = new double[4];
         result[0] = GetTempMin(data);
@@ -87,7 +100,7 @@ public partial class home : System.Web.UI.Page
         return result;
     }
 
-   
+
     protected double GetTempMin(String str)
     {
         Double min = 0;
@@ -150,11 +163,11 @@ public partial class home : System.Web.UI.Page
     {
         DateTime date = DateTime.Today;
         date = date.AddDays(2);
-       
+
         Label1.Text = "Today";
-        Label2.Text = "" + data[0][0]+ " °" + 'C';
-        Label3.Text = "" + data[0][1]+ " °" +'C';
-        SetColumn3(Image1,Label4,data[0][2]);
+        Label2.Text = "" + data[0][0] + " °" + 'C';
+        Label3.Text = "" + data[0][1] + " °" + 'C';
+        SetColumn3(Image1, Label4, data[0][2]);
 
         Label5.Text = "Tomorrow";
         Label6.Text = "" + data[1][0] + " °" + 'C';
@@ -165,7 +178,7 @@ public partial class home : System.Web.UI.Page
         Label10.Text = "" + data[2][0] + " °" + 'C';
         Label11.Text = "" + data[2][1] + " °" + 'C';
         SetColumn3(Image3, Label12, data[2][2]);
-        date=date.AddDays(1);
+        date = date.AddDays(1);
 
         Label13.Text = date.ToString("dd/MM/yy");
         Label14.Text = "" + data[3][0] + " °" + 'C';
@@ -197,10 +210,41 @@ public partial class home : System.Web.UI.Page
         string[] words = { "Sunny", "Cloudy", "Rainy", "Snowy" };
 
         int i = (int)val;
-
-        string url = "~/Weather_new/images/"+i+".png";
+        string url = "~/Weather_new/images/" + i + ".png";
         im.ImageUrl = url;
         lb.Text = words[i];
-      
+
+    }
+
+    protected string getLatitude(string data)
+    {
+        int pos_lat = data.IndexOf("latitude") + 10;
+        string sublat = data.Substring(pos_lat);
+        string latStr = "";
+        for (int i = 0; i < 10; i++)
+        {
+            if (sublat[i] == ',')
+                break;
+            latStr = latStr + sublat[i];
+
+        }
+
+        return latStr;
+
+    }
+    protected string getLongitude(string data)
+    {
+        int pos_lon = data.IndexOf("longitude") + 11;
+        string sublon = data.Substring(pos_lon);
+        string lonStr = "";
+        for (int i = 0; i < 10; i++)
+        {
+            if (sublon[i] == ',')
+                break;
+            lonStr = lonStr + sublon[i];
+
+        }
+
+        return lonStr;
     }
 }

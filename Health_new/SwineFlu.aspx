@@ -65,6 +65,23 @@
             text-align: left;
         }
     </style>
+    <script>
+        //Assuming 4 videos to be played
+        var flag = [1,1,1,1];
+        function play(name){
+            if (flag[name]) {
+                document.getElementById(name).play();
+                document.getElementById(name + "i").src = "rsz_1rsz_pause-512.png";
+                flag[name]=0
+            }
+            else {
+                document.getElementById(name).pause();
+                document.getElementById(name + "i").src = "rsz_1rsz_02_play-512.png";
+                flag[name] = 1
+            }
+        }
+
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -87,7 +104,11 @@
         <div class="auto-style2">
             <br />
             <div class="auto-style8" onclick="fun('about');" style="color: #CC99FF; font-style: italic; font-weight: bold; cursor: pointer; font-size: x-large;">
-                About:</div>
+                About:
+                 <image id="0i" src="rsz_1rsz_02_play-512.png"  onclick="play(0);" /> <br />
+        <audio id="0" style="display:none" controls ><source src="info_swineflu/swin_about.mp3"/>Your browser doesn't support</audio>
+
+            </div>
            
             <div id="about" hidden="hidden">
                 
@@ -108,7 +129,11 @@
                 <br />
             </div><br />
              <div class="auto-style8" onclick="fun('symptoms');" style="color: #CC99FF; font-style: italic; font-weight: bold; cursor: pointer; font-size: x-large;">
-                Symptoms:</div>
+                Symptoms:
+                  <image id="1i" src="rsz_1rsz_02_play-512.png"  onclick="play(1);" /> <br />
+        <audio id="1" style="display:none" controls ><source src="info_swineflu/swin_symp.mp3"/>Your browser doesn't support</audio>
+
+             </div>
             <div id="symptoms" hidden="hidden">  <br />
                 <table class="auto-style3">
                     <tr>
@@ -133,7 +158,12 @@
                 <br />
             </div><br />
              <div class="auto-style9" onclick="fun('diagonise');" style="color: #CC99FF; font-style: italic; font-weight: bold; cursor: pointer; font-size: x-large;">
-                Diagonise & Treatment:</div>
+                Diagonise & Treatment:
+                  <image id="2i" src="rsz_1rsz_02_play-512.png"  onclick="play(2);" /> <br />
+        <audio id="2" style="display:none" controls ><source src="info_swineflu/swin_diago.mp3"/>Your browser doesn't support</audio>
+
+
+             </div>
             <div id="diagonise" hidden="hidden">  <br />
                 <table class="auto-style3">
                     <tr>
@@ -155,7 +185,11 @@
                 <br />
             </div><br />
              <div class="auto-style10" onclick="fun('preventive');" style="color: #CC99FF; font-style: italic; font-weight: bold; cursor: pointer; font-size: x-large;">
-                Preventive Measures:</div>
+                Preventive Measures:
+                  <image id="3i" src="rsz_1rsz_02_play-512.png"  onclick="play(3);" /> <br />
+        <audio id="3" style="display:none" controls ><source src="info_swineflu/swin_preve.mp3"/>Your browser doesn't support</audio>
+<br />
+            </div>
         <div id="preventive" hidden="hidden">  <br />
                 <table class="auto-style3">
                     <tr>
@@ -183,53 +217,23 @@
                     <td class="auto-style15">
                         <asp:Image ID="Image10" runat="server" ImageUrl="~/Health_new/images/docter-200x200.png" />
                     </td>
-                    <td><asp:Panel ID="Panel1" runat="server" Height="275px" Width="450px" ScrollBars="Vertical">
-                <table class="auto-style3">
-                    <tr>
-                        <td class="auto-style17">
-                            &nbsp;&nbsp;&nbsp;
-                            <br />
-                            Dr.Lalit Panchal<br /> &nbsp;&nbsp;&nbsp; </td>
-                        <td class="auto-style7"><audio controls="controls">
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style17">
-                            <br />
-                            Dr.Devi Prasad Shetty<br /> &nbsp;&nbsp;&nbsp; </td>
-                        <td class="auto-style7"><audio controls="controls">
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style17">
-                            <br />
-                            Dr.Sudhanshu<br />
-                            &nbsp;&nbsp; </td>
-                        <td class="auto-style7"><audio>
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style17">
-                            <br />
-                            Dr.S Natarajan<br />
-                            &nbsp;&nbsp; </td>
-                        <td class="auto-style7"><audio>
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style17">
-                            <br />
-                            Dr.Akash Sastry<br />&nbsp;&nbsp;</td>
-                        <td class="auto-style7"><audio>
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                </table>
-            </asp:Panel>&nbsp;</td>
+                    <td>  <asp:Panel ID="Panel1" runat="server" Height="277px" Width="403px" ScrollBars="Vertical" CssClass="panelStyle">
+         <asp:DataList ID="DataList2" runat="server" >
+              
+                      <ItemTemplate>
+                          <br />
+                            <audio  ID ="Video1" runat="server" height="100" controls src ='<%#Bind("Name","~/Health_new/d_swineflu/{0}") %>' type="audio/mp3" >
+                                <source type = "audio/mp3">
+                                <source type = "audio/ogg">
+                                Your browser does not support the video tag.
+                            </audio>
+                          <br />
+                        
+                      </ItemTemplate>
+                         
+        </asp:DataList>
+        </asp:Panel>
+&nbsp;</td>
                 </tr>
             </table>
             <br />
@@ -242,51 +246,22 @@
                     <td class="auto-style16">
                         <asp:Image ID="Image11" runat="server" ImageUrl="~/Health_new/images/people-200x200.png" />
                     </td>
-                    <td><asp:Panel ID="Panel2" runat="server" Height="233px" Width="450px" ScrollBars="Vertical">
-                <table class="auto-style3">
-                    <tr>
-                        <td class="auto-style18">
-                            <br />
-                            Mr.Arjun</td>
-                        <td><audio>
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style18">
-                            <br />
-                            Mr.Karan</td>
-                        <td><audio>
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style18">
-                            <br />
-                            Mr.Ashutosh Prasad&nbsp;&nbsp;
-                           </td>
-                        <td><audio>
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style18">
-                            <br />
-                            Mr.Mayank Goel</td>
-                        <td><audio>
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                    <tr>
-                        <td class="auto-style18">
-                            <br />
-                            Mr.Jitendra Kumar</td>
-                        <td><audio>
-                            <source src="a.mp3" type="audio/mp3" />
-                            </audio></td>
-                    </tr>
-                </table>
-            </asp:Panel>&nbsp;</td>
+                    <td><asp:Panel ID="Panel2" runat="server" Height="277px" Width="403px" ScrollBars="Vertical" CssClass="panelStyle">
+         <asp:DataList ID="DataList1" runat="server" >
+              
+                      <ItemTemplate>
+                          <br />
+                            <audio  ID ="Video1" runat="server" height="100" controls src ='<%#Bind("Name","~/Health_new/p_swineflu/{0}") %>' type="audio/mp3" >
+                                <source type = "audio/mp3">
+                                <source type = "audio/ogg">
+                                Your browser does not support the video tag.
+                            </audio>
+                          <br />
+                        
+                      </ItemTemplate>
+                         
+        </asp:DataList>
+        </asp:Panel>&nbsp;</td>
                 </tr>
             </table>
             <br />
