@@ -19,10 +19,10 @@ public partial class home : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        ip = "http://geoip.nekudo.com/api/14.139.194.12/en";
+        string ips = "http://geoip.nekudo.com/api/"+ip+"/en";
         try
         {
-            HttpWebRequest rqst = (HttpWebRequest)WebRequest.Create(ip);
+            HttpWebRequest rqst = (HttpWebRequest)WebRequest.Create(ips);
             rqst.Method = "GET";
 
             HttpWebResponse resp = (HttpWebResponse)rqst.GetResponse();

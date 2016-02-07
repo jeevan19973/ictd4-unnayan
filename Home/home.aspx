@@ -172,7 +172,8 @@
         <table class="auto-style1">
             <tr>
                 <td>
-                    &nbsp;<br />
+                    &nbsp;<asp:ImageButton ID="ImageButton14" runat="server" Height="183px" ImageUrl="~/images/lolwa/doctor.png" OnClick="ImageButton14_Click" Width="158px" />
+                    <br />
                     <br />
                 </td>
                 <td>&nbsp;</td>
