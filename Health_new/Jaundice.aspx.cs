@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,8 +11,38 @@ public partial class SwineFlu : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        DirectoryInfo dir = new DirectoryInfo(MapPath("~/Health_new/p_jaundice"));
+        FileInfo[] file = dir.GetFiles();
+        ArrayList list = new ArrayList();
+        foreach (FileInfo file2 in file)
+        {
+            if (file2.Extension == ".mp3")
+            {
+                list.Add(file2);
+            }
+        }
+        DataList1.DataSource = list;
+        DataList1.DataBind();
+
+        dir = new DirectoryInfo(MapPath("~/Health_new/d_jaundice"));
+        file = dir.GetFiles();
+        list = new ArrayList();
+        foreach (FileInfo file2 in file)
+        {
+            if (file2.Extension == ".mp3")
+            {
+                list.Add(file2);
+            }
+        }
+        DataList2.DataSource = list;
+        DataList2.DataBind();
+    }
+
+    protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
 
     }
+
     protected void Button1_Click(object sender, EventArgs e)
     {
         if (FileUpload1.HasFile)
