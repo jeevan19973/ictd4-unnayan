@@ -9,10 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-     <asp:DataList ID="DataList2" runat="server" RepeatColumns ="2"
+     <asp:DataList ID="DataList2" runat="server" RepeatColumns ="1"
              BackColor="White"
             BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3"   ForeColor="Black"
-             Width="100%" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" Height="300px">
+             Width="50%" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" Height="300px">
            <FooterStyle BackColor="#CCCCCC" />
                        <SelectedItemStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
                         <HeaderTemplate>

@@ -70,15 +70,10 @@
     
         <br />
         <br />
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Digital Humanities/showuploadimages.aspx">See Images</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Digital Humanities/showuploadimages.aspx">User Output</asp:HyperLink>
     
         <br />
         <br />
-        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Digital Humanities/watch videos.aspx">Watch Videos</asp:HyperLink>
-    
-        <br />
-        <br />
-        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Digital Humanities/showaudios.aspx">Listen audio</asp:HyperLink>
     
     </div>
     </form>

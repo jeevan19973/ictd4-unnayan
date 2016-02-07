@@ -14,15 +14,36 @@ public partial class showuploadimages : System.Web.UI.Page
         DirectoryInfo dir = new DirectoryInfo(MapPath("~/Upload images/"));
         FileInfo[] file = dir.GetFiles();
         ArrayList list = new ArrayList();
+        ArrayList listvid = new ArrayList();
+        ArrayList listaud = new ArrayList();
         foreach (FileInfo file2 in file)
         {
             if (file2.Extension == ".jpg" || file2.Extension == ".jpeg" || file2.Extension == ".gif" || file2.Extension == ".png")
             {
                 list.Add(file2);
             }
+
+            if (file2.Extension == ".mp4")
+            {
+                listvid.Add(file2);
+            }
+
+            if (file2.Extension == ".mp3")
+            {
+                listaud.Add(file2);
+            }
         }
+
+       
+      
+        DataList3.DataSource = listaud;
+        DataList3.DataBind();
         DataList1.DataSource = list;
         DataList1.DataBind();
+
+      
+        DataList2.DataSource = listvid;
+        DataList2.DataBind();
        
     }
     protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
