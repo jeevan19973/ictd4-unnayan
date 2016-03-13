@@ -22,6 +22,9 @@
         .auto-style10 {
             font-size: xx-large;
         }
+        .auto-style9 {
+            height: 576px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder1">
@@ -46,10 +49,10 @@
                 <td class="auto-style19">
                     <asp:Panel ID="Panel3" runat="server" Height="578px">
                         <div class="auto-style9">
-                            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="../agriculture_rate_gov.aspx" style="text-align: center"><span class="auto-style10">বাজার - দর ( সরকারি )</span></a><br class="auto-style10" />
+                            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="/Agriculture/agriculture_rate_gov.aspx" style="text-align: center"><span class="auto-style10">বাজার - দর ( সরকারি )</span></a><br class="auto-style10" />
                             <br class="auto-style10" />
                             <br class="auto-style10" />
-                            <span class="auto-style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a href="../agriculture_rate_other.aspx"><span class="auto-style10">বাজার - দর ( অন্যান্য )</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="auto-style10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><a href="/Agriculture/agriculture_rate_other.aspx"><span class="auto-style10">বাজার - দর ( অন্যান্য )</span></a>&nbsp;&nbsp;&nbsp;&nbsp;
                             <br />
                             <br class="auto-style10" />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -63,7 +66,13 @@
                             <br class="auto-style10" />
                             <br class="auto-style10" />
                             <br class="auto-style10" />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="tel:1800-11-4000"><span class="auto-style10">ক্রেতা সুরক্ষা </span></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style10"><a href="tel:1800-11-4000">ক্রেতা সুরক্ষা </a></span>
+                            <br />
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Agriculture/CropsInSeasons.aspx">CROPS IN SEASONS</asp:HyperLink>
                         </div>
                     </asp:Panel>
                     <br />
