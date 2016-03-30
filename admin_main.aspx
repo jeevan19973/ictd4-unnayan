@@ -72,24 +72,24 @@
             <br />
             <br />
             Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server" Height="23px" Width="228px"></asp:TextBox>
+            <asp:TextBox ID="TextBox_Name" runat="server" Height="23px" Width="228px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <asp:Label ID="Label1" runat="server" style="color: #FF0000"></asp:Label>
             <br />
             <br />
             Mobile No :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox2" runat="server" Height="25px" Width="229px"></asp:TextBox>
+            <asp:TextBox ID="TextBox_Mobile" runat="server" Height="25px" Width="229px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label2" runat="server" style="color: #FF0000"></asp:Label>
             <br />
             <br />
             Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox3" runat="server" Height="21px" Width="228px" TextMode="Password" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="TextBox_Pass" runat="server" Height="21px" Width="228px" TextMode="Password" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label3" runat="server" style="color: #FF0000"></asp:Label>
             <br />
             <br />
-            Re Enter Password :&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBox4" runat="server" Height="21px" Width="226px" TextMode="Password"></asp:TextBox>
+            Re Enter Password :&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:TextBox ID="TextBox_RePass" runat="server" Height="21px" Width="226px" TextMode="Password"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <asp:Label ID="Label4" runat="server" style="color: #FF0000"></asp:Label>
             <br />
@@ -110,31 +110,31 @@
             <br />
             <br />
             Address :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox5" runat="server" Height="20px" Width="229px"></asp:TextBox>
+            <asp:TextBox ID="TextBox_Address" runat="server" Height="20px" Width="229px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label5" runat="server" style="color: #FF0000"></asp:Label>
             <br />
             <br />
             Village&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox9" runat="server" Height="21px" Width="233px"></asp:TextBox>
+            <asp:TextBox ID="TextBox_Village" runat="server" Height="21px" Width="233px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label11" runat="server" style="color: #FF0000"></asp:Label>
             <br />
             <br />
             District :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox10" runat="server" Height="20px" Width="231px"></asp:TextBox>
+            <asp:TextBox ID="TextBox_District" runat="server" Height="20px" Width="231px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label12" runat="server" style="color: #FF0000"></asp:Label>
             <br />
             <br />
             Block :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox11" runat="server" Height="18px" Width="235px"></asp:TextBox>
+            <asp:TextBox ID="TextBox_Block" runat="server" Height="18px" Width="235px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label13" runat="server" style="color: #FF0000"></asp:Label>
             <br />
             <br />
             PIN :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox6" runat="server" Height="20px" Width="231px"></asp:TextBox>
+            <asp:TextBox ID="TextBox_Pin" runat="server" Height="20px" Width="231px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label6" runat="server" style="color: #FF0000"></asp:Label>
             <br />
@@ -148,8 +148,8 @@
             <br />
             <br />
             Date Of Birth&nbsp; :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox7" runat="server" Height="19px" Width="237px"></asp:TextBox>
-            <cc1:CalendarExtender ID="TextBox7_CalendarExtender" runat="server" BehaviorID="TextBox7_CalendarExtender" TargetControlID="TextBox7" />
+            <asp:TextBox ID="TextBox_Dob" runat="server" Height="19px" Width="237px" ></asp:TextBox>
+            <cc1:CalendarExtender ID="TextBox7_CalendarExtender" runat="server" Format="dd/MM/yyyy" BehaviorID="TextBox7_CalendarExtender" TargetControlID="TextBox_Dob" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <asp:Label ID="Label7" runat="server" style="color: #FF0000"></asp:Label>
             <br />

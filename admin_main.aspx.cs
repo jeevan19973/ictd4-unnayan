@@ -80,7 +80,7 @@ public partial class admin_main : System.Web.UI.Page
     {
         int invalid = 1;
         // Validation
-        if (TextBox1.Text.Trim().Length == 0)   // Name Validation
+        if (TextBox_Name.Text.Trim().Length == 0)   // Name Validation
         {
             Label1.Visible = true;
             Label1.Text = " Name cannot be left blank.";
@@ -91,7 +91,7 @@ public partial class admin_main : System.Web.UI.Page
             Label1.Text = "";
             invalid*=1;
         }
-        if (TextBox2.Text.Trim().Length == 0)   // Mobile Number Validation
+        if (TextBox_Mobile.Text.Trim().Length == 0)   // Mobile Number Validation
         {
             Label2.Visible = true;
             Label2.Text = " Mobile Number cannot be left blank.";
@@ -102,7 +102,7 @@ public partial class admin_main : System.Web.UI.Page
             Label2.Text = "";
             invalid *= 1;
         }
-        if (TextBox3.Text.Trim().Length == 0)   // Password Validation
+        if (TextBox_Pass.Text.Trim().Length == 0)   // Password Validation
         {
             Label3.Visible = true;
             Label3.Text = " Password cannot be left blank.";
@@ -113,7 +113,7 @@ public partial class admin_main : System.Web.UI.Page
             Label3.Text = "";
             invalid *= 1;
         }
-        if (TextBox4.Text.Trim().Length == 0 || TextBox3.Text.Equals(TextBox4.Text) == false)     //  Re-enter Password Validation
+        if (TextBox_RePass.Text.Trim().Length == 0 || TextBox_Pass.Text.Equals(TextBox_RePass.Text) == false)     //  Re-enter Password Validation
         {
             Label4.Visible = true;
             Label4.Text = " Passwords doesn't match";
@@ -124,7 +124,7 @@ public partial class admin_main : System.Web.UI.Page
             Label4.Text = "";
             invalid *= 1;
         }
-        if (TextBox5.Text.Trim().Length == 0 || TextBox5.Text.Trim().Length < 10)      //  Address Validation
+        if (TextBox_Address.Text.Trim().Length == 0 || TextBox_Address.Text.Trim().Length < 10)      //  Address Validation
         {
             Label5.Visible = true;
             Label5.Text = " A cannot be left blank.";
@@ -135,7 +135,7 @@ public partial class admin_main : System.Web.UI.Page
             Label5.Text = "";
             invalid *= 1;
         }
-        if (TextBox6.Text.Trim().Length == 0)   // PIN Validation
+        if (TextBox_Pin.Text.Trim().Length == 0)   // PIN Validation
         {
             Label6.Visible = true;
             Label6.Text = " PIN cannot be left blank.";
@@ -146,7 +146,7 @@ public partial class admin_main : System.Web.UI.Page
             Label6.Text = "";
             invalid *= 1;
         }
-        if (TextBox7.Text.Trim().Length == 0)   // Date of Birth Validation
+        if (TextBox_Dob.Text.Trim().Length == 0)   // Date of Birth Validation
         {
             Label7.Visible = true;
             Label7.Text = " Date of Birth cannot be left blank.";
@@ -157,7 +157,7 @@ public partial class admin_main : System.Web.UI.Page
             Label7.Text = "";
             invalid *= 1;
         }
-        if (TextBox9.Text.Trim().Length == 0)   // Date of Birth Validation
+        if (TextBox_Village.Text.Trim().Length == 0)   // Date of Birth Validation
         {
             Label11.Visible = true;
             Label11.Text = " Village cannot be left blank.";
@@ -168,7 +168,7 @@ public partial class admin_main : System.Web.UI.Page
             Label11.Text = "";
             invalid *= 1;
         }
-        if (TextBox10.Text.Trim().Length == 0)   // Date of Birth Validation
+        if (TextBox_District.Text.Trim().Length == 0)   // Date of Birth Validation
         {
             Label12.Visible = true;
             Label12.Text = " District cannot be left blank.";
@@ -179,7 +179,7 @@ public partial class admin_main : System.Web.UI.Page
             Label12.Text = "";
             invalid *= 1;
         }
-        if (TextBox11.Text.Trim().Length == 0)   // Date of Birth Validation
+        if (TextBox_Block.Text.Trim().Length == 0)   // Date of Birth Validation
         {
             Label13.Visible = true;
             Label13.Text = " Block cannot be left blank.";
@@ -202,8 +202,14 @@ public partial class admin_main : System.Web.UI.Page
             }
         if(invalid == 0 && antiSqlInjection() == 0)
             {
-                String user = TextBox2.Text + GenderSelect.Value.ElementAt(0).ToString().ElementAt(0);
-                SqlCommand com1 = new SqlCommand("insert into user_db values('" + user + "','" + TextBox3.Text + "','" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox7.Text + "','" + GenderSelect.Value + "','" + TextBox5.Text + "','" + TextBox9.Text + "','" + TextBox10.Text + "','" + TextBox11.Text + "','" + TextBox6.Text + "','" + DateTime.Today.Date + "','" + file_1+ "')", conn);
+                String user = TextBox_Mobile.Text + GenderSelect.Value.ElementAt(0).ToString().ElementAt(0);
+                SqlCommand com1 = new SqlCommand("insert into user_db values('" + user + "','" + TextBox_Pass.Text +
+                    "','" + 1 + "','" + TextBox_Name.Text + "','" +
+                    TextBox_Mobile.Text + "','" + DateTime.ParseExact(TextBox_Dob.Text, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture).ToShortDateString() + "','" +
+    GenderSelect.Value + "','" + TextBox_Address.Text + "','" + TextBox_Village.Text + "','" + 
+    TextBox_District.Text + "','" + TextBox_Block.Text + "','" + TextBox_Pin.Text + "','" +
+    DateTime.Now.ToShortDateString() +
+    "','" + file_1 + "')", conn);
                 com1.ExecuteNonQuery();
             }
     }
@@ -230,27 +236,27 @@ public partial class admin_main : System.Web.UI.Page
     protected int antiSqlInjection()
         {
             int invalid = 0;
-            if (TextBox1.Text.Contains("'") || TextBox1.Text.Contains("\"") || TextBox1.Text.Contains("=") || TextBox1.Text.Contains(","))
+            if (TextBox_Name.Text.Contains("'") || TextBox_Name.Text.Contains("\"") || TextBox_Name.Text.Contains("=") || TextBox_Name.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox2.Text.Contains("'") || TextBox2.Text.Contains("\"") || TextBox2.Text.Contains("=") || TextBox2.Text.Contains(","))
+            else if (TextBox_Mobile.Text.Contains("'") || TextBox_Mobile.Text.Contains("\"") || TextBox_Mobile.Text.Contains("=") || TextBox_Mobile.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox2.Text.Contains("'") || TextBox2.Text.Contains("\"") || TextBox2.Text.Contains("=") || TextBox2.Text.Contains(","))
+            else if (TextBox_Mobile.Text.Contains("'") || TextBox_Mobile.Text.Contains("\"") || TextBox_Mobile.Text.Contains("=") || TextBox_Mobile.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox3.Text.Contains("'") || TextBox3.Text.Contains("\"") || TextBox3.Text.Contains("=") || TextBox3.Text.Contains(","))
+            else if (TextBox_Pass.Text.Contains("'") || TextBox_Pass.Text.Contains("\"") || TextBox_Pass.Text.Contains("=") || TextBox_Pass.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox4.Text.Contains("'") || TextBox4.Text.Contains("\"") || TextBox4.Text.Contains("=") || TextBox4.Text.Contains(","))
+            else if (TextBox_RePass.Text.Contains("'") || TextBox_RePass.Text.Contains("\"") || TextBox_RePass.Text.Contains("=") || TextBox_RePass.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox5.Text.Contains("'") || TextBox5.Text.Contains("\"") || TextBox5.Text.Contains("=") || TextBox5.Text.Contains(","))
+            else if (TextBox_Address.Text.Contains("'") || TextBox_Address.Text.Contains("\"") || TextBox_Address.Text.Contains("=") || TextBox_Address.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox6.Text.Contains("'") || TextBox6.Text.Contains("\"") || TextBox6.Text.Contains("=") || TextBox6.Text.Contains(","))
+            else if (TextBox_Pin.Text.Contains("'") || TextBox_Pin.Text.Contains("\"") || TextBox_Pin.Text.Contains("=") || TextBox_Pin.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox7.Text.Contains("'") || TextBox7.Text.Contains("\"") || TextBox7.Text.Contains("=") || TextBox7.Text.Contains(","))
+            else if (TextBox_Dob.Text.Contains("'") || TextBox_Dob.Text.Contains("\"") || TextBox_Dob.Text.Contains("=") || TextBox_Dob.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox9.Text.Contains("'") || TextBox9.Text.Contains("\"") || TextBox9.Text.Contains("=") || TextBox9.Text.Contains(","))
+            else if (TextBox_Village.Text.Contains("'") || TextBox_Village.Text.Contains("\"") || TextBox_Village.Text.Contains("=") || TextBox_Village.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox10.Text.Contains("'") || TextBox10.Text.Contains("\"") || TextBox10.Text.Contains("=") || TextBox10.Text.Contains(","))
+            else if (TextBox_District.Text.Contains("'") || TextBox_District.Text.Contains("\"") || TextBox_District.Text.Contains("=") || TextBox_District.Text.Contains(","))
                 invalid = 1;
-            else if (TextBox11.Text.Contains("'") || TextBox11.Text.Contains("\"") || TextBox11.Text.Contains("=") || TextBox11.Text.Contains(","))
+            else if (TextBox_Block.Text.Contains("'") || TextBox_Block.Text.Contains("\"") || TextBox_Block.Text.Contains("=") || TextBox_Block.Text.Contains(","))
                 invalid = 1;
             return invalid;
         }
@@ -273,35 +279,35 @@ public partial class admin_main : System.Web.UI.Page
         }
     public void reset_all_fields()
         {
-            TextBox1.Text = "";
-            TextBox2.Text = "";
-            TextBox3.Text = "";
-            TextBox4.Text = "";
-            TextBox5.Text = "";
-            TextBox9.Text = "";
-            TextBox10.Text = "";
-            TextBox11.Text = "";
-            TextBox6.Text = "";
-            TextBox7.Text = "";
+            TextBox_Name.Text = "";
+            TextBox_Mobile.Text = "";
+            TextBox_Pass.Text = "";
+            TextBox_RePass.Text = "";
+            TextBox_Address.Text = "";
+            TextBox_Village.Text = "";
+            TextBox_District.Text = "";
+            TextBox_Block.Text = "";
+            TextBox_Pin.Text = "";
+            TextBox_Dob.Text = "";
         }
     public void autofill_all_fields(String val)
         {
              SqlCommand com_name = new SqlCommand(" Select name from user_db where user_id='" + val + "'", conn);
-             TextBox1.Text = com_name.ExecuteScalar().ToString();
+             TextBox_Name.Text = com_name.ExecuteScalar().ToString();
              SqlCommand com_mob = new SqlCommand(" Select phone_no from user_db where user_id='" + val + "'", conn);
-             TextBox2.Text = com_mob.ExecuteScalar().ToString();
+             TextBox_Mobile.Text = com_mob.ExecuteScalar().ToString();
              SqlCommand com_add = new SqlCommand(" Select address from user_db where user_id='" + val + "'", conn);
-             TextBox5.Text = com_add.ExecuteScalar().ToString();
+             TextBox_Address.Text = com_add.ExecuteScalar().ToString();
              SqlCommand com_village = new SqlCommand(" Select village from user_db where user_id='" + val + "'", conn);
-             TextBox9.Text = com_village.ExecuteScalar().ToString();
+             TextBox_Village.Text = com_village.ExecuteScalar().ToString();
              SqlCommand com_district = new SqlCommand(" Select district from user_db where user_id='" + val + "'", conn);
-             TextBox10.Text = com_district.ExecuteScalar().ToString();
+             TextBox_District.Text = com_district.ExecuteScalar().ToString();
              SqlCommand com_block = new SqlCommand(" Select block from user_db where user_id='" + val + "'", conn);
-             TextBox11.Text = com_block.ExecuteScalar().ToString();
+             TextBox_Block.Text = com_block.ExecuteScalar().ToString();
              SqlCommand com_pin = new SqlCommand(" Select pin from user_db where user_id='" + val + "'", conn);
-             TextBox6.Text = com_pin.ExecuteScalar().ToString();
+             TextBox_Pin.Text = com_pin.ExecuteScalar().ToString();
              SqlCommand com_dob = new SqlCommand(" Select dob from user_db where user_id='" + val + "'", conn);
-             TextBox7.Text = com_dob.ExecuteScalar().ToString();
+             TextBox_Dob.Text = com_dob.ExecuteScalar().ToString();
         }
     protected void Button11_Click(object sender, EventArgs e)        //Cancel delete Button
     {
@@ -342,8 +348,8 @@ public partial class admin_main : System.Web.UI.Page
         {
             Label14.Text = "";
             if (FileUpload1.HasFile)
-                FileUpload1.SaveAs(Server.MapPath("~/uploads/photo/") + file + "." + "jpg");
-            Image1.ImageUrl = "uploads/photo/" + file + ".jpg";
+                FileUpload1.SaveAs(Server.MapPath("~/images/profile/") + file + "." + "jpg");
+            Image1.ImageUrl = "images/profile/" + file + ".jpg";
             file_1 = file;
         }
         else
