@@ -1,0 +1,547 @@
+[33mcommit fd3eadec8643e6889f0ce1584d54f60c264535fb[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 23 12:53:34 2015 +0530
+
+    Add logout button on WelcomeUser page
+
+ Job/Users/WelcomeUser.aspx    | 10 [32m+++++++[m[31m---[m
+ Job/Users/WelcomeUser.aspx.cs |  6 [32m++++++[m
+ 2 files changed, 13 insertions(+), 3 deletions(-)
+
+[33mcommit 7eb843f783baaf8cbf9c28696f23d4a8eed605ac[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 23 12:46:58 2015 +0530
+
+    Remove  job from registration page and put it in skills adding page
+    Use Images for jobs instead of text to help villagers in understanding
+
+ App_Data/Job_UserDatabase.mdf     | Bin [31m3211264[m -> [32m3211264[m bytes
+ App_Data/Job_UserDatabase_log.ldf | Bin [31m802816[m -> [32m802816[m bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 5bbf2d92e8d47b54dd3e7fb7f789ef7fd61dd815[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 23 12:44:53 2015 +0530
+
+    The page will not open unless you have logged out, so that you can't login
+    with two different accounts
+
+ Job/Register_Job.aspx.cs | 3 [32m++[m[31m-[m
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+[33mcommit 9f7734a9075f0c3f3978a7688c045c462e5d6872[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Mon Dec 21 23:17:28 2015 +0530
+
+    Add images files for skills in images folder
+
+Notes:
+    Crop all images to 150px vs 150px instead of using height and width attributes to save processing
+
+ .../Job_Skills/Teaching_in_Indian_Village_Schools_1.jpg | Bin [31m0[m -> [32m63880[m bytes
+ images/Job_Skills/Weaving_in_Indian_Villages.jpg        | Bin [31m0[m -> [32m79634[m bytes
+ images/Job_Skills/download.jpg                          | Bin [31m0[m -> [32m55273[m bytes
+ images/Job_Skills/images.jpg                            | Bin [31m0[m -> [32m52396[m bytes
+ images/Job_Skills/indian-farmer.jpg                     | Bin [31m0[m -> [32m65320[m bytes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 04edfe018b28931400e6097703c29e1c3b2f302e[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Mon Dec 21 23:07:41 2015 +0530
+
+    Add images for skills and its display as text()can display images too
+
+Notes:
+    TODO:Add images for acquired skills instead of text
+
+ Job/Users/WelcomeUser.aspx    | 26 [32m+++++++++++++++++++[m[31m-------[m
+ Job/Users/WelcomeUser.aspx.cs | 13 [32m+++++++++++++[m
+ 2 files changed, 32 insertions(+), 7 deletions(-)
+
+[33mcommit ab29662329a82a522c68397dcb4ca37e65c52473[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Mon Dec 21 22:49:18 2015 +0530
+
+    Remove Occupation from Register_Job and Job_UserDatabase
+
+ App_Data/Job_UserDatabase.mdf     | Bin [31m3211264[m -> [32m3211264[m bytes
+ App_Data/Job_UserDatabase_log.ldf | Bin [31m802816[m -> [32m802816[m bytes
+ Job/Register_Job.aspx             |  27 [32m++++++++++++++++++[m[31m---------[m
+ Job/Register_Job.aspx.cs          |  10 [32m++++++++[m[31m--[m
+ 4 files changed, 26 insertions(+), 11 deletions(-)
+
+[33mcommit 673fe860d62c1fcc44193a54ab01a199022592ae[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Mon Dec 21 04:06:04 2015 +0530
+
+    Add Skills Table for various users. Separate Job from UserData table and
+    add it to Sklls table as the first skill.Implement Cascade for Update and
+    delte and NORMALISED Database
+
+ App_Data/Job_UserDatabase.mdf     | Bin [31m3211264[m -> [32m3211264[m bytes
+ App_Data/Job_UserDatabase_log.ldf | Bin [31m802816[m -> [32m802816[m bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 984a810b9addfe37eb08a043b5632e7b5f7461f4[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Sat Dec 19 01:13:49 2015 +0530
+
+    Add session and a new welcome User Page(TODO:fill the user page)
+
+ Job/Register_Job.aspx.cs      | 22 [32m+++++++++++++++++[m[31m-----[m
+ Job/Users/WelcomeUser.aspx    | 32 [32m++++++++++++++++++++++++++++++++[m
+ Job/Users/WelcomeUser.aspx.cs | 17 [32m+++++++++++++++++[m
+ 3 files changed, 66 insertions(+), 5 deletions(-)
+
+[33mcommit 34dbf1aed44f54f0ee3bad3ae060b1f7c60b549f[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Sat Dec 19 01:11:43 2015 +0530
+
+    Make and empty Database with just one sample entry
+
+ App_Data/Job_UserDatabase.mdf     | Bin [31m3211264[m -> [32m3211264[m bytes
+ App_Data/Job_UserDatabase_log.ldf | Bin [31m802816[m -> [32m802816[m bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit d24ce702f799cef7780eba3e1497e36f4f5f4fae[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 18 22:13:55 2015 +0530
+
+    Add Job_UserDatabase
+    (with duplicated data)
+
+Notes:
+    TODO: Fix stuff
+    change css style to make it cosistent
+    Make things more user friedly
+    Pic hashtag and add your voice
+
+ App_Data/Job_UserDatabase.mdf     | Bin [31m0[m -> [32m3211264[m bytes
+ App_Data/Job_UserDatabase_log.ldf | Bin [31m0[m -> [32m802816[m bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 41448584a21a5ea717b168b6cb7ff479a189057f[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 18 20:49:29 2015 +0530
+
+    Cleaned code : removed extrace commented code from .cs file
+    and removed onTextChanged() method as it was not required now
+    TODO: clean CSS so that less css is used
+
+ Job/Register_Job.aspx    |  2 [32m+[m[31m-[m
+ Job/Register_Job.aspx.cs | 44 [32m+[m[31m-------------------------------------------[m
+ 2 files changed, 2 insertions(+), 44 deletions(-)
+
+[33mcommit ba2a1f1595b2c8979dc881c3a817d6a1f97da7a0[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 18 20:45:39 2015 +0530
+
+    Add Unobtrusive Jquery error correction(<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />)
+    and Job_UserDatabase connection string
+
+ Web.config | 4 [32m++++[m
+ 1 file changed, 4 insertions(+)
+
+[33mcommit 253df36db15ad6e54c50211f6668944b351fc019[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 18 18:45:38 2015 +0530
+
+    A working user registration page without session(checks for
+    user_already_exists and empty input)
+
+ Job/Register_Job.aspx      | 107 [32m++++++++++++++++++++++++++++++++++++++[m
+ Job/Register_Job.aspx.cs   | 127 [32m+++++++++++++++++++++++++++++++++++++++++++++[m
+ Job/UserData_Table.aspx    |  37 [32m+++++++++++++[m
+ Job/UserData_Table.aspx.cs |  14 [32m+++++[m
+ 4 files changed, 285 insertions(+)
+
+[33mcommit 8591c079e7c9ea1255460c8ee36b18b31aee0fb4[m
+Author: Ravi <ravi.cs13@iitp.ac.in>
+Date:   Tue Dec 8 13:37:36 2015 +0530
+
+    Readme
+
+ README.md | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 392f772429d442f33c1afb240f221d4e9bfe93b9[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Tue Dec 1 17:12:15 2015 +0530
+
+    folder for all uploads under name (Upload images)
+    
+    I need to change the folder name from "Upload images" in general to
+    "Uploads".
+
+ Upload images/010 - Roar - Katy Perry.mp3 | Bin [31m0[m -> [32m10174274[m bytes
+ Upload images/NEuip.jpg                   | Bin [31m0[m -> [32m324306[m bytes
+ Upload images/ard.mp4                     | Bin [31m0[m -> [32m41334333[m bytes
+ Upload images/as.mp3                      | Bin [31m0[m -> [32m10153933[m bytes
+ Upload images/movie.mp4                   | Bin [31m0[m -> [32m318465[m bytes
+ Upload images/reset.png                   | Bin [31m0[m -> [32m1700[m bytes
+ Upload images/sunset.jpg                  | Bin [31m0[m -> [32m3856819[m bytes
+ 7 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 37072395a95beccdd9da6b7e6bf1965d711a7d28[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Tue Dec 1 17:06:21 2015 +0530
+
+    DataBase for UploadText - Digital Humanities
+
+ App_Data/uploadtext.mdf     | Bin [31m0[m -> [32m3211264[m bytes
+ App_Data/uploadtext_log.ldf | Bin [31m0[m -> [32m802816[m bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 70aee6eca6b17cfda8093219dc8d6b579f364872[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Tue Dec 1 17:04:03 2015 +0530
+
+    Changes made from digital Humanities
+
+ Digital Humanities/Defaultupload.aspx       | 18 [32m+++++++[m
+ Digital Humanities/Defaultupload.aspx.cs    | 14 [32m++++++[m
+ Digital Humanities/showaudios.aspx          | 42 [32m++++++++++++++++[m
+ Digital Humanities/showaudios.aspx.cs       | 31 [32m++++++++++++[m
+ Digital Humanities/showuploadimages.aspx    | 38 [32m+++++++++++++++[m
+ Digital Humanities/showuploadimages.aspx.cs | 36 [32m++++++++++++++[m
+ Digital Humanities/upload.aspx              | 37 [32m++++++++++++++[m
+ Digital Humanities/upload.aspx.cs           | 73 [32m++++++++++++++++++++++++++++[m
+ Digital Humanities/uploadtext.aspx          | 30 [32m++++++++++++[m
+ Digital Humanities/uploadtext.aspx.cs       | 55 [32m+++++++++++++++++++++[m
+ Digital Humanities/watch videos.aspx        | 38 [32m+++++++++++++++[m
+ Digital Humanities/watch videos.aspx.cs     | 32 [32m++++++++++++[m
+ Home/home.aspx                              |  5 [32m+[m[31m-[m
+ service_edu.aspx.cs.exclude                 | 30 [32m++++++++++++[m
+ service_edu.aspx.exclude                    | 75 [32m+++++++++++++++++++++++++++++[m
+ 15 files changed, 552 insertions(+), 2 deletions(-)
+
+[33mcommit cf25ea87ea61027d60401a8e2a3cf5210a7c6c31[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 16:04:57 2015 +0530
+
+    weather, and other required files
+
+ Weather/weather_main.aspx    |  28 [32m++++[m
+ Weather/weather_main.aspx.cs |  30 [32m++++[m
+ Web.Debug.config             |  31 [32m++++[m
+ Web.config                   |  37 [32m+++++[m
+ WebService.asmx              |   1 [32m+[m
+ admin_main.aspx              | 220 [32m++++++++++++++++++++++++++[m
+ admin_main.aspx.cs           | 361 [32m+++++++++++++++++++++++++++++++++++++++++++[m
+ inner_master.master          |  46 [32m++++++[m
+ inner_master.master.cs       |  14 [32m++[m
+ 9 files changed, 768 insertions(+)
+
+[33mcommit 96c902d0bc9c890fa0a29bee98f47a2294711246[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 16:02:50 2015 +0530
+
+    uploads
+
+ uploads/temp/hello.jpg | Bin [31m0[m -> [32m146635[m bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 013ecf2be5695917c71fa86f1e9fae3c1794b2c7[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 16:00:36 2015 +0530
+
+    radio, services
+
+ Radio/radio_main.aspx            | 28 [32m++++++++++++++++[m
+ Radio/radio_main.aspx.cs         | 30 [32m+++++++++++++++++[m
+ Services/services_agro.aspx      | 69 [32m++++++++++++++++++++++++++++++++++++++++[m
+ Services/services_agro.aspx.cs   | 47 [32m+++++++++++++++++++++++++++[m
+ Services/services_health.aspx    | 69 [32m++++++++++++++++++++++++++++++++++++++++[m
+ Services/services_health.aspx.cs | 47 [32m+++++++++++++++++++++++++++[m
+ Services/services_main.aspx      | 64 [32m+++++++++++++++++++++++++++++++++++++[m
+ Services/services_main.aspx.cs   | 30 [32m+++++++++++++++++[m
+ 8 files changed, 384 insertions(+)
+
+[33mcommit 8cdc8013861c51329d5e914d71dad9452bb4c47e[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:59:41 2015 +0530
+
+    only news is added
+
+ News/news_abp.aspx          | 88 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ News/news_abp.aspx.cs       | 14 [32m+++++++[m
+ News/news_current.aspx      | 88 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ News/news_current.aspx.cs   | 14 [32m+++++++[m
+ News/news_main.aspx         | 89 [32m+++++++++++++++++++++++++++++++++++++++++++++[m
+ News/news_main.aspx.cs      | 30 [32m+++++++++++++++[m
+ News/news_now.aspx          | 40 [32m++++++++++++++++++++[m
+ News/news_now.aspx.cs       | 30 [32m+++++++++++++++[m
+ News/news_sanmarg.aspx      | 40 [32m++++++++++++++++++++[m
+ News/news_sanmarg.aspx.cs   | 30 [32m+++++++++++++++[m
+ News/news_statesman.aspx    | 40 [32m++++++++++++++++++++[m
+ News/news_statesman.aspx.cs | 30 [32m+++++++++++++++[m
+ 12 files changed, 533 insertions(+)
+
+[33mcommit 355bcf86dd616c0bb764e91a3bd1e53fc24c783b[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:58:18 2015 +0530
+
+    only job is added
+
+ Job/job_employment.aspx      | 40 [32m+++++++++++++++++++++[m
+ Job/job_employment.aspx.cs   | 30 [32m++++++++++++++++[m
+ Job/job_main.aspx            | 83 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ Job/job_main.aspx.cs         | 30 [32m++++++++++++++++[m
+ Job/job_organisation.aspx    | 30 [32m++++++++++++++++[m
+ Job/job_organisation.aspx.cs | 30 [32m++++++++++++++++[m
+ Job/job_others.aspx          | 30 [32m++++++++++++++++[m
+ Job/job_others.aspx.cs       | 30 [32m++++++++++++++++[m
+ Job/job_workplace.aspx       | 30 [32m++++++++++++++++[m
+ Job/job_workplace.aspx.cs    | 30 [32m++++++++++++++++[m
+ Job/job_zila.aspx            | 40 [32m+++++++++++++++++++++[m
+ Job/job_zila.aspx.cs         | 30 [32m++++++++++++++++[m
+ 12 files changed, 433 insertions(+)
+
+[33mcommit 4331280f162892cb217bab2c55c3354bf8dfe452[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:56:08 2015 +0530
+
+    job, news, radio
+
+ Job/job_employment.aspx      | 40 [31m--------------------[m
+ Job/job_employment.aspx.cs   | 30 [31m---------------[m
+ Job/job_main.aspx            | 83 [31m-----------------------------------------[m
+ Job/job_main.aspx.cs         | 30 [31m---------------[m
+ Job/job_organisation.aspx    | 30 [31m---------------[m
+ Job/job_organisation.aspx.cs | 30 [31m---------------[m
+ Job/job_others.aspx          | 30 [31m---------------[m
+ Job/job_others.aspx.cs       | 30 [31m---------------[m
+ Job/job_workplace.aspx       | 30 [31m---------------[m
+ Job/job_workplace.aspx.cs    | 30 [31m---------------[m
+ Job/job_zila.aspx            | 40 [31m--------------------[m
+ Job/job_zila.aspx.cs         | 30 [31m---------------[m
+ News/news_abp.aspx           | 88 [31m-------------------------------------------[m
+ News/news_abp.aspx.cs        | 14 [31m-------[m
+ News/news_current.aspx       | 88 [31m-------------------------------------------[m
+ News/news_current.aspx.cs    | 14 [31m-------[m
+ News/news_main.aspx          | 89 [31m--------------------------------------------[m
+ News/news_main.aspx.cs       | 30 [31m---------------[m
+ News/news_now.aspx           | 40 [31m--------------------[m
+ News/news_now.aspx.cs        | 30 [31m---------------[m
+ News/news_sanmarg.aspx       | 40 [31m--------------------[m
+ News/news_sanmarg.aspx.cs    | 30 [31m---------------[m
+ News/news_statesman.aspx     | 40 [31m--------------------[m
+ News/news_statesman.aspx.cs  | 30 [31m---------------[m
+ Radio/radio_main.aspx        | 28 [31m--------------[m
+ Radio/radio_main.aspx.cs     | 30 [31m---------------[m
+ 26 files changed, 1024 deletions(-)
+
+[33mcommit 9951bb53b564a4181c4ee2ec7cd3778a59c89831[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:53:01 2015 +0530
+
+    job, news, radio
+
+ Job/job_employment.aspx      | 40 [32m++++++++++++++++++++[m
+ Job/job_employment.aspx.cs   | 30 [32m+++++++++++++++[m
+ Job/job_main.aspx            | 83 [32m+++++++++++++++++++++++++++++++++++++++++[m
+ Job/job_main.aspx.cs         | 30 [32m+++++++++++++++[m
+ Job/job_organisation.aspx    | 30 [32m+++++++++++++++[m
+ Job/job_organisation.aspx.cs | 30 [32m+++++++++++++++[m
+ Job/job_others.aspx          | 30 [32m+++++++++++++++[m
+ Job/job_others.aspx.cs       | 30 [32m+++++++++++++++[m
+ Job/job_workplace.aspx       | 30 [32m+++++++++++++++[m
+ Job/job_workplace.aspx.cs    | 30 [32m+++++++++++++++[m
+ Job/job_zila.aspx            | 40 [32m++++++++++++++++++++[m
+ Job/job_zila.aspx.cs         | 30 [32m+++++++++++++++[m
+ News/news_abp.aspx           | 88 [32m+++++++++++++++++++++++++++++++++++++++++++[m
+ News/news_abp.aspx.cs        | 14 [32m+++++++[m
+ News/news_current.aspx       | 88 [32m+++++++++++++++++++++++++++++++++++++++++++[m
+ News/news_current.aspx.cs    | 14 [32m+++++++[m
+ News/news_main.aspx          | 89 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ News/news_main.aspx.cs       | 30 [32m+++++++++++++++[m
+ News/news_now.aspx           | 40 [32m++++++++++++++++++++[m
+ News/news_now.aspx.cs        | 30 [32m+++++++++++++++[m
+ News/news_sanmarg.aspx       | 40 [32m++++++++++++++++++++[m
+ News/news_sanmarg.aspx.cs    | 30 [32m+++++++++++++++[m
+ News/news_statesman.aspx     | 40 [32m++++++++++++++++++++[m
+ News/news_statesman.aspx.cs  | 30 [32m+++++++++++++++[m
+ Radio/radio_main.aspx        | 28 [32m++++++++++++++[m
+ Radio/radio_main.aspx.cs     | 30 [32m+++++++++++++++[m
+ 26 files changed, 1024 insertions(+)
+
+[33mcommit 456fe3a16ddb6adabc68bf81225a43dfa5088936[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:50:21 2015 +0530
+
+    home, images
+
+ Home/home.aspx                                     | 185 [32m+++++++++++++++++++++[m
+ Home/home.aspx.cs                                  |  66 [32m++++++++[m
+ images/Agri_4.jpg                                  | Bin [31m0[m -> [32m102777[m bytes
+ images/Agricultue4.png                             | Bin [31m0[m -> [32m74949[m bytes
+ images/Agriculture_rollover(VERSION1).jpg          | Bin [31m0[m -> [32m93776[m bytes
+ images/Amar kotha.png                              | Bin [31m0[m -> [32m87719[m bytes
+ images/Amar kotha_4.jpg                            | Bin [31m0[m -> [32m175754[m bytes
+ images/Cart.png                                    | Bin [31m0[m -> [32m88128[m bytes
+ images/Culture4.jpg                                | Bin [31m0[m -> [32m123955[m bytes
+ images/Culture_MAIN(VERSION4).png                  | Bin [31m0[m -> [32m79089[m bytes
+ images/Desin template -2.png                       | Bin [31m0[m -> [32m146635[m bytes
+ images/Edu4.png                                    | Bin [31m0[m -> [32m97343[m bytes
+ images/Education_MAIN(VERSION4).png                | Bin [31m0[m -> [32m81912[m bytes
+ images/Educationpic4.png                           | Bin [31m0[m -> [32m111693[m bytes
+ images/Emergency numbers_MAIN(VERSION4).png        | Bin [31m0[m -> [32m79289[m bytes
+ images/Facebook.jpg                                | Bin [31m0[m -> [32m15984[m bytes
+ images/Feedback_MAIN(VERSION4).png                 | Bin [31m0[m -> [32m72874[m bytes
+ images/Feedback_rollover(VERSION1).jpg             | Bin [31m0[m -> [32m90947[m bytes
+ images/ICT4D png/108Logo.png                       | Bin [31m0[m -> [32m29116[m bytes
+ images/ICT4D png/4260-14427-west-bengal-police.png | Bin [31m0[m -> [32m26262[m bytes
+ images/ICT4D png/5TATESMAN_LOGO.png                | Bin [31m0[m -> [32m1512[m bytes
+ images/ICT4D png/Bartaman_logo.png                 | Bin [31m0[m -> [32m1117[m bytes
+ images/ICT4D png/Emblem_of_India.png               | Bin [31m0[m -> [32m14377[m bytes
+ images/ICT4D png/FormImages-gyandarshan.png        | Bin [31m0[m -> [32m3162[m bytes
+ images/ICT4D png/HOSTl doctor.png                  | Bin [31m0[m -> [32m567[m bytes
+ images/ICT4D png/Logo_of_AIR.png                   | Bin [31m0[m -> [32m9189[m bytes
+ images/ICT4D png/NIOS.png                          | Bin [31m0[m -> [32m5924[m bytes
+ images/ICT4D png/NSUB.JPG                          | Bin [31m0[m -> [32m13336[m bytes
+ images/ICT4D png/NSUB.png                          | Bin [31m0[m -> [32m8021[m bytes
+ images/ICT4D png/RBU-LOGO.png                      | Bin [31m0[m -> [32m20415[m bytes
+ images/ICT4D png/Sanmarg.png                       | Bin [31m0[m -> [32m1434[m bytes
+ images/ICT4D png/ananda bajar patrika.png          | Bin [31m0[m -> [32m2772[m bytes
+ images/ICT4D png/bed-hi.png                        | Bin [31m0[m -> [32m758[m bytes
+ images/ICT4D png/dd_doordarshan_hd.png             | Bin [31m0[m -> [32m2628[m bytes
+ images/ICT4D png/doctor plus sign.png              | Bin [31m0[m -> [32m2753[m bytes
+ images/ICT4D png/ei samay.png                      | Bin [31m0[m -> [32m4953[m bytes
+ images/ICT4D png/fire services.png                 | Bin [31m0[m -> [32m7541[m bytes
+ images/ICT4D png/hospital_GREY.png                 | Bin [31m0[m -> [32m2116[m bytes
+ images/ICT4D png/ignu.png                          | Bin [31m0[m -> [32m3519[m bytes
+ images/ICT4D png/kisan-call-centre.png             | Bin [31m0[m -> [32m2453[m bytes
+ images/ICT4D png/local doctor.png                  | Bin [31m0[m -> [32m2543[m bytes
+ images/ICT4D png/raftaar_logo_new.png              | Bin [31m0[m -> [32m1614[m bytes
+ images/Job_MAIN(VERSION4).png                      | Bin [31m0[m -> [32m66715[m bytes
+ images/Job_rollover(VERSION4).jpg                  | Bin [31m0[m -> [32m59369[m bytes
+ images/Jobs_4.jpg                                  | Bin [31m0[m -> [32m121505[m bytes
+ images/Logo 2.jpg                                  | Bin [31m0[m -> [32m98257[m bytes
+ images/News and weather_MAIN(VERSION1).jpg         | Bin [31m0[m -> [32m98224[m bytes
+ images/News and weather_MAIN(VERSION4).png         | Bin [31m0[m -> [32m72309[m bytes
+ images/News4.jpg                                   | Bin [31m0[m -> [32m62003[m bytes
+ images/Peacock.png                                 | Bin [31m0[m -> [32m78132[m bytes
+ images/Radio.jpg                                   | Bin [31m0[m -> [32m113080[m bytes
+ images/Radio.png                                   | Bin [31m0[m -> [32m171600[m bytes
+ images/Radio_MAIN(VERSION4)150px.png               | Bin [31m0[m -> [32m37076[m bytes
+ images/Services.png                                | Bin [31m0[m -> [32m186063[m bytes
+ images/Services_version4.png                       | Bin [31m0[m -> [32m139048[m bytes
+ images/icon/49.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/50.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/51.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/52.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/53.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/54.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/55.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/56.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/57.bmp                                 | Bin [31m0[m -> [32m8518[m bytes
+ images/icon/audio-video final.png                  | Bin [31m0[m -> [32m3224[m bytes
+ images/icon/camera.png                             | Bin [31m0[m -> [32m2265[m bytes
+ images/icon/mike 1.png                             | Bin [31m0[m -> [32m1809[m bytes
+ images/icon/send.bmp                               | Bin [31m0[m -> [32m47322[m bytes
+ images/icon/text.png                               | Bin [31m0[m -> [32m2247[m bytes
+ images/kajkormo.png                                | Bin [31m0[m -> [32m63553[m bytes
+ images/lolwa/Barley.jpg                            | Bin [31m0[m -> [32m16865[m bytes
+ images/lolwa/rainy.jpg                             | Bin [31m0[m -> [32m8240[m bytes
+ images/lolwa/summer.jpg                            | Bin [31m0[m -> [32m11461[m bytes
+ images/lolwa/text1.png                             | Bin [31m0[m -> [32m1189[m bytes
+ images/lolwa/text2.png                             | Bin [31m0[m -> [32m1291[m bytes
+ images/lolwa/text3.png                             | Bin [31m0[m -> [32m1290[m bytes
+ images/lolwa/text4.png                             | Bin [31m0[m -> [32m1146[m bytes
+ images/lolwa/wheat.jpg                             | Bin [31m0[m -> [32m19681[m bytes
+ images/lolwa/winter.jpg                            | Bin [31m0[m -> [32m4481[m bytes
+ images/news.png                                    | Bin [31m0[m -> [32m53237[m bytes
+ images/weather.png                                 | Bin [31m0[m -> [32m61447[m bytes
+ 81 files changed, 251 insertions(+)
+
+[33mcommit fe25c65248d878fef95ca349ddb747f39c1222bd[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:49:16 2015 +0530
+
+    edu, feedback, health
+
+ Education/education_gyanbani.aspx       |  30 [32m++++++[m
+ Education/education_gyanbani.aspx.cs    |  30 [32m++++++[m
+ Education/education_gyandarshan.aspx    |  40 [32m+++++++[m
+ Education/education_gyandarshan.aspx.cs |  30 [32m++++++[m
+ Education/education_indira.aspx         |  30 [32m++++++[m
+ Education/education_indira.aspx.cs      |  30 [32m++++++[m
+ Education/education_main.aspx           |  88 [32m+++++++++++++++[m
+ Education/education_main.aspx.cs        |  30 [32m++++++[m
+ Education/education_netaji.aspx         |  30 [32m++++++[m
+ Education/education_netaji.aspx.cs      |  30 [32m++++++[m
+ Education/education_rabi.aspx           |  30 [32m++++++[m
+ Education/education_rabi.aspx.cs        |  30 [32m++++++[m
+ Education/education_rash.aspx           |  30 [32m++++++[m
+ Education/education_rash.aspx.cs        |  30 [32m++++++[m
+ Feedback/feedback_main.aspx             |  95 [32m++++++++++++++++[m
+ Feedback/feedback_main.aspx.cs          | 121 [32m+++++++++++++++++++++[m
+ Feedback/login_page.aspx                | 107 [32m++++++++++++++++++[m
+ Feedback/login_page.aspx.cs             | 186 [32m++++++++++++++++++++++++++++++++[m
+ Health/health_main.aspx                 |  78 [32m++++++++++++++[m
+ Health/health_main.aspx.cs              |  30 [32m++++++[m
+ 20 files changed, 1105 insertions(+)
+
+[33mcommit 5307b065556030331c7d6dfed48f9ca7f8072740[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:47:44 2015 +0530
+
+    bin, contacts, culture
+
+ Bin/AjaxControlToolkit.dll         |  Bin [31m0[m -> [32m5149184[m bytes
+ Bin/AjaxControlToolkit.dll.refresh |  Bin [31m0[m -> [32m202[m bytes
+ Bin/HtmlAgilityPack.dll            |  Bin [31m0[m -> [32m92672[m bytes
+ Bin/HtmlAgilityPack.dll.refresh    |  Bin [31m0[m -> [32m126[m bytes
+ Bin/HtmlAgilityPack.pdb            |  Bin [31m0[m -> [32m241152[m bytes
+ Bin/HtmlAgilityPack.xml            | 2310 [32m++++++++++++++++++++++++++++++++++++[m
+ Contacts/contacts_main.aspx        |   83 [32m++[m
+ Contacts/contacts_main.aspx.cs     |   30 [32m+[m
+ Culture/culture_festival.aspx      |   51 [32m+[m
+ Culture/culture_festival.aspx.cs   |   14 [32m+[m
+ Culture/culture_history.aspx       |   51 [32m+[m
+ Culture/culture_history.aspx.cs    |   14 [32m+[m
+ Culture/culture_list.aspx          |   55 [32m+[m
+ Culture/culture_list.aspx.cs       |   14 [32m+[m
+ Culture/culture_main.aspx          |   71 [32m++[m
+ Culture/culture_main.aspx.cs       |   14 [32m+[m
+ Culture/culture_news.aspx          |   51 [32m+[m
+ Culture/culture_news.aspx.cs       |   14 [32m+[m
+ Culture/culture_tradition.aspx     |   55 [32m+[m
+ Culture/culture_tradition.aspx.cs  |   14 [32m+[m
+ 20 files changed, 2841 insertions(+)
+
+[33mcommit 04e2289d90255e989cc315adbd7c80e62ef7858d[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:46:33 2015 +0530
+
+    app code, data
+
+ App_Code/WebService.cs      |  27 [32m+++++++++++++++++++++++++++[m
+ App_Data/Database.mdf       | Bin [31m0[m -> [32m3211264[m bytes
+ App_Data/Database_Log.ldf   | Bin [31m0[m -> [32m802816[m bytes
+ App_Data/uploadinfo.mdf     | Bin [31m0[m -> [32m3211264[m bytes
+ App_Data/uploadinfo_log.ldf | Bin [31m0[m -> [32m802816[m bytes
+ 5 files changed, 27 insertions(+)
+
+[33mcommit b51e760883252d3b21150abe29e6945402238711[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:45:06 2015 +0530
+
+    agriculture
+
+ Agriculture/agriculture_main.aspx          | 75 [32m++++++++++++++++++++++++++++++[m
+ Agriculture/agriculture_main.aspx.cs       | 14 [32m++++++[m
+ Agriculture/agriculture_rate_gov.aspx      | 55 [32m++++++++++++++++++++++[m
+ Agriculture/agriculture_rate_gov.aspx.cs   | 14 [32m++++++[m
+ Agriculture/agriculture_rate_other.aspx    | 55 [32m++++++++++++++++++++++[m
+ Agriculture/agriculture_rate_other.aspx.cs | 14 [32m++++++[m
+ 6 files changed, 227 insertions(+)
+
+[33mcommit 27a03a2519c817ff0a7bcbe42f689aaa68d5409b[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:42:45 2015 +0530
+
+    Create README.md
+
+ README.md | 2 [32m++[m
+ 1 file changed, 2 insertions(+)

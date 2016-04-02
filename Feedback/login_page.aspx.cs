@@ -188,4 +188,8 @@ public partial class _Default : System.Web.UI.Page
             invalid = 1;
         return invalid;
     }
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/admin_main.aspx");
+    }
 }

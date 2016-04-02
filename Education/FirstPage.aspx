@@ -24,6 +24,7 @@
         <br />
         <asp:ImageButton ID="Button_Test" OnClick="Button_Test_Click" runat="server" ImageUrl="~/images/takeaTest.jpg" />
         <br />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="education forum" />
         <br />
         <br />
         <br />

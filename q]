@@ -1,0 +1,372 @@
+[33mcommit b7622c7b135f88cdf50e85d5cdb4a584a94bd46f[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Sat Feb 6 20:22:57 2016 +0530
+
+    Merge all databases and their tables into a single databse because our
+    hosting website allows only one connection string(Caution :MIght break
+    other peoples work if something is done wrong)
+
+[33mcommit 134b4c4ba1072bb0cb84781b047ee63ae118373e[m
+Author: BIT-TU <konda.tapasya@gmail.com>
+Date:   Thu Jan 14 01:29:55 2016 +0530
+
+    ImageUrls and NavUrls Changed
+
+[33mcommit 1d7b1d49f55ee948a1b214a56782c1a357d97805[m
+Author: chakkriii <pvschakradhar@gmail.com>
+Date:   Wed Jan 13 19:31:24 2016 +0530
+
+    chat application for online people
+
+[33mcommit ab736a98556b25343f97b4be376e193ea1c317c8[m
+Author: BIT-TU <konda.tapasya@gmail.com>
+Date:   Wed Jan 13 22:31:46 2016 +0530
+
+    Health, Weather
+    
+    Added new health_new and weather_new folders.
+
+[33mcommit 207db4845e18c507b0e3d9db288d7e1f227edfbe[m
+Author: chakkriii <pvschakradhar@gmail.com>
+Date:   Wed Jan 13 19:20:15 2016 +0530
+
+    unnayan radio
+
+[33mcommit ef6ddf097271de8f36d4c5d9a02d94d9116ad231[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Tue Jan 12 02:55:10 2016 +0530
+
+    Hide edit profile button as login register page from chakri's code will be
+    used
+
+[33mcommit 6baab5e88b87e5f0af8365beb5f39197f761c677[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Tue Jan 12 02:37:28 2016 +0530
+
+    Add some database entries which were shown to be modified but were not
+    actually modified
+
+[33mcommit 12efed80b15bb778e5f9497ab616fcff14b30124[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Tue Jan 12 02:35:00 2016 +0530
+
+    Add some minor changes(add already user button and regiter button ) link
+    of Abhishek's work on main education page
+
+[33mcommit 04b52221a99bdabf931da8ca58312c8476c705a0[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Tue Jan 12 02:32:56 2016 +0530
+
+    Add images for buttons, i.e change buttons to image buttons
+
+[33mcommit 4dd1d5a4bc1c9e116e473601d47c5031ab3bbbed[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Tue Jan 12 02:31:04 2016 +0530
+
+    Add feature to remove skills by clicking them again
+
+[33mcommit 6fcf5d692f9850d9fae781ae24dd29e6df1a987f[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Tue Jan 12 02:02:38 2016 +0530
+
+    Add comment and keyword part in question answer section
+
+[33mcommit c434370dc2d6d27eaecd7592bc1de33c1c5f68d6[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Tue Jan 12 01:56:03 2016 +0530
+
+    Add images for some of the buttons , add link of Abhishek's work on
+    education_main page, Modified sample test to give same test for all
+    choices
+
+[33mcommit 39bd80071a8b8d87e55e7e7843ba984db47ff98d[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 30 19:36:53 2015 +0530
+
+    Add test page for students and other related page
+
+[33mcommit 254d45fbb3f39335b6f16d61b64399c981ff7166[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 30 19:24:15 2015 +0530
+
+    Add page that has a website to teach job skills
+
+[33mcommit e53715dcca01ab0d449e2ef24cd29853e0535d94[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 30 19:22:59 2015 +0530
+
+    Add start page in Education(has options take test, learn job skills, study
+    for school)
+
+[33mcommit f399755398c6685ad004d77601b9d4b92f387ebc[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Tue Dec 29 20:30:10 2015 +0530
+
+    Job final commit(database files MIGHT have been changed)
+
+[33mcommit 8785c1279a71e54e1db2d14f10fbc1588aa1832a[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Sat Dec 26 01:58:50 2015 +0530
+
+    Add a user profile page for users to edit info(Under Construction)
+
+[33mcommit 3d634fcd054053a0efb23f5e8a27e14deae9b025[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Sat Dec 26 01:57:40 2015 +0530
+
+    Add some iframe links for career advice
+
+[33mcommit 9379e5560f6da4349ca6d46086d38e4cbc5bc2aa[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Sat Dec 26 00:38:05 2015 +0530
+
+    Move career advice on login page and chaged from relative to absolute path
+    (THIS MAy BREAK PAge links)
+
+[33mcommit 17d246ab60f008765941a67e537c444e7b6e0196[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 25 23:02:02 2015 +0530
+
+    dd database for Advertisers info and the skills they are searching for
+    (They don't get an account only info is saved for future use)
+
+[33mcommit e6e1fa0cf2d4322d4be6abe512ccc1868bfc926f[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 25 21:51:57 2015 +0530
+
+    Show various advertisements here, use images of skills so that villagers
+    can search for the advertisement for that particular skill
+
+[33mcommit d041d8e1fcb8019acf3d7f2cb2c81d64833641e9[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 25 21:49:59 2015 +0530
+
+    Add advertisers info here and use images so that they can add skills
+    required
+
+[33mcommit 66e92d248a2ab31ecdd75ab9f7014d8667d6d88c[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 25 17:40:22 2015 +0530
+
+    Add advertise button
+
+[33mcommit 5943165dbf281fd7f6075200a08bbcf6f0887b52[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 23 14:02:39 2015 +0530
+
+    Add search facilities to find a person with particular skill
+    Add a grid view that shows information of villagers which have a
+    particular skill
+    Use images for searching a villager with a particular skill
+
+[33mcommit 12ae3650bc3a73c74353cf4bb7e3427594e1c31b[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 23 13:59:03 2015 +0530
+
+    Add images for skills to make things easier for villagers
+
+Notes:
+    TODO : ADD images for known skills of villagers
+
+[33mcommit d60fa2538fcd6eee8081d088016c6c0a5e448ad0[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 23 12:53:34 2015 +0530
+
+    Add logout button on WelcomeUser page
+
+[33mcommit 2e483fb2b7dfb3b6afd0ed6286ea8b1b881dc708[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 23 12:46:58 2015 +0530
+
+    Remove  job from registration page and put it in skills adding page
+
+[33mcommit 5bbf2d92e8d47b54dd3e7fb7f789ef7fd61dd815[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Wed Dec 23 12:44:53 2015 +0530
+
+    The page will not open unless you have logged out, so that you can't login
+    with two different accounts
+
+[33mcommit 9f7734a9075f0c3f3978a7688c045c462e5d6872[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Mon Dec 21 23:17:28 2015 +0530
+
+    Add images files for skills in images folder
+
+Notes:
+    Crop all images to 150px vs 150px instead of using height and width attributes to save processing
+
+[33mcommit 04edfe018b28931400e6097703c29e1c3b2f302e[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Mon Dec 21 23:07:41 2015 +0530
+
+    Add images for skills and its display as text()can display images too
+
+Notes:
+    TODO:Add images for acquired skills instead of text
+
+[33mcommit ab29662329a82a522c68397dcb4ca37e65c52473[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Mon Dec 21 22:49:18 2015 +0530
+
+    Remove Occupation from Register_Job and Job_UserDatabase
+
+[33mcommit 673fe860d62c1fcc44193a54ab01a199022592ae[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Mon Dec 21 04:06:04 2015 +0530
+
+    Add Skills Table for various users. Separate Job from UserData table and
+    add it to Sklls table as the first skill.Implement Cascade for Update and
+    delte and NORMALISED Database
+
+[33mcommit 984a810b9addfe37eb08a043b5632e7b5f7461f4[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Sat Dec 19 01:13:49 2015 +0530
+
+    Add session and a new welcome User Page(TODO:fill the user page)
+
+[33mcommit 34dbf1aed44f54f0ee3bad3ae060b1f7c60b549f[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Sat Dec 19 01:11:43 2015 +0530
+
+    Make and empty Database with just one sample entry
+
+[33mcommit d24ce702f799cef7780eba3e1497e36f4f5f4fae[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 18 22:13:55 2015 +0530
+
+    Add Job_UserDatabase
+    (with duplicated data)
+
+Notes:
+    TODO: Fix stuff
+    change css style to make it cosistent
+    Make things more user friedly
+    Pic hashtag and add your voice
+
+[33mcommit 41448584a21a5ea717b168b6cb7ff479a189057f[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 18 20:49:29 2015 +0530
+
+    Cleaned code : removed extrace commented code from .cs file
+    and removed onTextChanged() method as it was not required now
+    TODO: clean CSS so that less css is used
+
+[33mcommit ba2a1f1595b2c8979dc881c3a817d6a1f97da7a0[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 18 20:45:39 2015 +0530
+
+    Add Unobtrusive Jquery error correction(<add key="ValidationSettings:UnobtrusiveValidationMode" value="None" />)
+    and Job_UserDatabase connection string
+
+[33mcommit 253df36db15ad6e54c50211f6668944b351fc019[m
+Author: BlazingFire <abhi.jaiswal44@gmail.com>
+Date:   Fri Dec 18 18:45:38 2015 +0530
+
+    A working user registration page without session(checks for
+    user_already_exists and empty input)
+
+[33mcommit 8591c079e7c9ea1255460c8ee36b18b31aee0fb4[m
+Author: Ravi <ravi.cs13@iitp.ac.in>
+Date:   Tue Dec 8 13:37:36 2015 +0530
+
+    Readme
+
+[33mcommit 392f772429d442f33c1afb240f221d4e9bfe93b9[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Tue Dec 1 17:12:15 2015 +0530
+
+    folder for all uploads under name (Upload images)
+    
+    I need to change the folder name from "Upload images" in general to
+    "Uploads".
+
+[33mcommit 37072395a95beccdd9da6b7e6bf1965d711a7d28[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Tue Dec 1 17:06:21 2015 +0530
+
+    DataBase for UploadText - Digital Humanities
+
+[33mcommit 70aee6eca6b17cfda8093219dc8d6b579f364872[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Tue Dec 1 17:04:03 2015 +0530
+
+    Changes made from digital Humanities
+
+[33mcommit cf25ea87ea61027d60401a8e2a3cf5210a7c6c31[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 16:04:57 2015 +0530
+
+    weather, and other required files
+
+[33mcommit 96c902d0bc9c890fa0a29bee98f47a2294711246[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 16:02:50 2015 +0530
+
+    uploads
+
+[33mcommit 013ecf2be5695917c71fa86f1e9fae3c1794b2c7[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 16:00:36 2015 +0530
+
+    radio, services
+
+[33mcommit 8cdc8013861c51329d5e914d71dad9452bb4c47e[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:59:41 2015 +0530
+
+    only news is added
+
+[33mcommit 355bcf86dd616c0bb764e91a3bd1e53fc24c783b[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:58:18 2015 +0530
+
+    only job is added
+
+[33mcommit 4331280f162892cb217bab2c55c3354bf8dfe452[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:56:08 2015 +0530
+
+    job, news, radio
+
+[33mcommit 9951bb53b564a4181c4ee2ec7cd3778a59c89831[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:53:01 2015 +0530
+
+    job, news, radio
+
+[33mcommit 456fe3a16ddb6adabc68bf81225a43dfa5088936[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:50:21 2015 +0530
+
+    home, images
+
+[33mcommit fe25c65248d878fef95ca349ddb747f39c1222bd[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:49:16 2015 +0530
+
+    edu, feedback, health
+
+[33mcommit 5307b065556030331c7d6dfed48f9ca7f8072740[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:47:44 2015 +0530
+
+    bin, contacts, culture
+
+[33mcommit 04e2289d90255e989cc315adbd7c80e62ef7858d[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:46:33 2015 +0530
+
+    app code, data
+
+[33mcommit b51e760883252d3b21150abe29e6945402238711[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:45:06 2015 +0530
+
+    agriculture
+
+[33mcommit 27a03a2519c817ff0a7bcbe42f689aaa68d5409b[m
+Author: jeevan19973 <suryamaddu@yahoo.in>
+Date:   Sat Nov 28 15:42:45 2015 +0530
+
+    Create README.md

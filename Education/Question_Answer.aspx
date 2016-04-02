@@ -22,7 +22,7 @@
             <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="btnUpload_Click" />
         </div>
         <div>
-            <asp:GridView ID="gvDetails" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" OnSelectedIndexChanged="gvDetails_SelectedIndexChanged" >
+            <asp:GridView ID="gvDetails" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" >
                 <HeaderStyle BackColor="#df5015" Font-Bold="true" ForeColor="White" />
                 <Columns>
                     <asp:BoundField DataField="Id" HeaderText="Id" />

@@ -83,16 +83,16 @@ public partial class Job_Users_UserJobProfile : System.Web.UI.Page
         {
             try
             {
-                String insert_query = "DELETE FROM Skills WHERE Username = @Usn And Skill = @Skill";
+                String delete_query = "DELETE FROM Skills WHERE Username = @Usn And Skill = @Skill";
                 conn.Open();
-                SqlCommand comm = new SqlCommand(insert_query, conn);
+                SqlCommand comm = new SqlCommand(delete_query, conn);
                 comm.Parameters.AddWithValue("@Usn", Session["Username"].ToString());
                 comm.Parameters.AddWithValue("@Skill", skill);
                 comm.ExecuteNonQuery();
             }
-            catch (Exception insertError)
+            catch (Exception deleteError)
             {
-                Response.Write(insertError.ToString());
+                Response.Write(deleteError.ToString());
             }
             finally
             {

@@ -28,5 +28,9 @@ public partial class Education_FirstPage : System.Web.UI.Page
     {
         Response.Redirect("~/Education/Test_Choices.aspx");
     }
-    
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Education/education_forum.aspx");
+    }
 }

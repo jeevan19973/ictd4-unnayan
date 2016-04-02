@@ -24,26 +24,10 @@ public partial class home : System.Web.UI.Page
             Response.Redirect("~/health_new/diseases.aspx");
     }
 
-
-
-    protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
     {
-        string path = DropDownList2.SelectedValue.ToString() + ".aspx";
-        DropDownList2.SelectedIndex = 0;
-        Redirect("ind_hosp.aspx");
-       
-    }
 
-    protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        string path = DropDownList1.SelectedValue.ToString() + ".aspx";
-        DropDownList1.SelectedIndex = 0;
-        Redirect("ind_hosp.aspx");
+        Response.Redirect("~/healthServices/home.aspx");
 
-
-    }
-    protected void Redirect(string path)
-    {
-        Response.Redirect(path);
     }
 }

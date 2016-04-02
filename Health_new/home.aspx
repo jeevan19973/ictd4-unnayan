@@ -25,11 +25,7 @@
         .auto-style13 {
             width: 50%;
         }
-        .auto-style14 {
-            text-align: right;
-            width: 171px;
-        }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -92,42 +88,12 @@
                     <br />
                     Get details like info / no.of beds / appointment
                     <br />
-                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Health_new/images/rsz_services.jpg" />
+                    <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/Health_new/images/rsz_services.jpg" OnClick="ImageButton3_Click" />
                     <br />
                     <br />
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <table class="auto-style3">
-                        <tr>
-                            <td class="auto-style14">Search hospitals nearby:</td>
-                            <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;
-                                <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" Width="100px" AutoPostBack="True">
-                                    <asp:ListItem Selected="True">Select</asp:ListItem>
-                                    <asp:ListItem>AIIMS Patna</asp:ListItem>
-                                    <asp:ListItem>Ford Hospital</asp:ListItem>
-                                    <asp:ListItem>Nalanda Hospital</asp:ListItem>
-                                    <asp:ListItem>Dharbanga Hospital</asp:ListItem>
-                                </asp:DropDownList>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="auto-style14">Search hospitals around India:<br />
-                                <br />
-                            </td>
-                            <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;
-                                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="100px" AutoPostBack="True">
-                                    <asp:ListItem Selected="True">Select</asp:ListItem>
-                                    <asp:ListItem>Apollo Hospitals</asp:ListItem>
-                                    <asp:ListItem>Fortis Hospital</asp:ListItem>
-                                </asp:DropDownList>
-                                <br />
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+            
         </table>
     
         <br />
