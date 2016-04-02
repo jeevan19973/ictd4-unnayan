@@ -31,7 +31,7 @@ public partial class _home : System.Web.UI.Page
     }
     protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/News/news_main.aspx");
+        Response.Redirect("~/News/unnayannews/home.aspx");
     }
     protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
     {
