@@ -14,6 +14,8 @@ public partial class _Default : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         conn.Open();
+        if (Session["service_name"] == null)
+            Session["service_name"] = "~/Home/home.aspx";
         if (!IsPostBack)
         {
             shuffle_arr=Array_Shuffle();
@@ -164,9 +166,12 @@ public partial class _Default : System.Web.UI.Page
                 
                 if(pass.Equals(TextBox2.Text))
                     {
+                        Session["userId"] = "TextBox1.Text";
                         Session["service"] = "pass";
                         Session["name"] = nameval;
+                       // Response.Redirect(Session["service_name"].ToString());
                         Response.Redirect(Session["service_name"].ToString());
+                        
                         
                     }
             }

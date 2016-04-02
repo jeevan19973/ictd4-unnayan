@@ -85,6 +85,36 @@
             <br />
             Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox_Pass" runat="server" Height="21px" Width="228px" TextMode="Password" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+
+           &nbsp;&nbsp;  &nbsp; <asp:ImageButton ID="ib1" runat="server" ImageUrl="~/images/icon/49.bmp" OnClick="ImageButton5_Click" BorderStyle="Solid" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ib2" runat="server" ImageUrl="~/images/icon/50.bmp" OnClick="ImageButton6_Click" BorderStyle="Solid" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ib3" runat="server" ImageUrl="~/images/icon/51.bmp" OnClick="ib3_Click" BorderStyle="Solid" />
+                            &nbsp;&nbsp;<br />
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:ImageButton ID="ib4" runat="server" ImageUrl="~/images/icon/52.bmp" OnClick="ImageButton8_Click" BorderStyle="Solid" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ib5" runat="server" ImageUrl="~/images/icon/53.bmp" OnClick="ib5_Click" BorderStyle="Solid" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ib6" runat="server" ImageUrl="~/images/icon/54.bmp" OnClick="ib6_Click" BorderStyle="Solid" />
+                            <br />
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ib7" runat="server" ImageUrl="~/images/icon/55.bmp" OnClick="ib7_Click" BorderStyle="Solid" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ib8" runat="server" ImageUrl="~/images/icon/56.bmp" OnClick="ib8_Click" BorderStyle="Solid" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <asp:ImageButton ID="ib9" runat="server" ImageUrl="~/images/icon/57.bmp" OnClick="ib9_Click" BorderStyle="Solid" />
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br />
+                            <br />
+                            <br />
+
+
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label3" runat="server" style="color: #FF0000"></asp:Label>
             <br />
@@ -152,10 +182,11 @@
             <cc1:CalendarExtender ID="TextBox7_CalendarExtender" runat="server" Format="dd/MM/yyyy" BehaviorID="TextBox7_CalendarExtender" TargetControlID="TextBox_Dob" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <asp:Label ID="Label7" runat="server" style="color: #FF0000"></asp:Label>
+            <asp:TextBox ID="TextBox_file_1" runat="server" style="margin-bottom: 0px" Visible="False"></asp:TextBox>
             <br />
             <br />
             <br />
-            <asp:Button ID="Button4" runat="server" Height="28px" Text="Submit" Width="93px" OnClick="Button4_Click" />
+            <asp:Button ID="Button4" runat="server" Height="28px" Text="Submit" Width="93px" OnClick="Button4_Click" CausesValidation="False" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button6" runat="server" Height="29px" OnClick="Button6_Click" Text="Close" Width="86px" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
