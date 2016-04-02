@@ -14,20 +14,26 @@ public partial class home : System.Web.UI.Page
 
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
-       
-        Response.Redirect("~/health_new/seasonal.aspx");
+        Response.Redirect("~/healthServices/nearBy.aspx");
     }
 
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
     {
-       
-            Response.Redirect("~/health_new/diseases.aspx");
+        Response.Redirect("~/healthServices/uploadProbs.aspx");
     }
 
     protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
     {
+        Response.Redirect("~/healthServices/bedAvail.aspx");
+    }
 
-        Response.Redirect("~/healthServices/home.aspx");
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("~/healthServices/results.aspx");
+    }
 
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("~/healthServices/communication.aspx");
     }
 }

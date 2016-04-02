@@ -154,7 +154,7 @@
                 <br />
             </div><br />
              <div class="auto-style9" onclick="fun('diagonise');" style="color: #CC99FF; font-style: italic; font-weight: bold; font-size: x-large;">
-                Diagonise & Treatment:
+                Diagonise & Treatment:<br />
         <image id="2i" src="rsz_1rsz_02_play-512.png"  onclick="play(2);" /> <br />
         <audio id="2" style="display:none" controls ><source src="info_chikungunya/chik_diago.mp3"/>Your browser doesn't support</audio>
 

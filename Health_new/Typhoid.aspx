@@ -145,13 +145,21 @@
                                 <asp:ListItem>eye sensitivity to bright lights</asp:ListItem>
                                 <asp:ListItem>severe muscle pain</asp:ListItem>
                             </asp:BulletedList>
+                        <br />
+                             <img alt="" src="download%20(1).jpe" style="width: 240px; height: 157px" /><img 
+                                alt="" src="download%20(2).jpe" style="width: 318px; height: 159px" /><img 
+                                alt="" src="download%20(3).jpe" style="width: 289px; height: 174px" /><br />
+                            <img alt="" src="download%20(6).jpe" style="width: 275px; height: 183px" /><img 
+                                alt="" src="download%20(7).jpe" style="width: 274px; height: 184px" /><img 
+                                alt="" src="download.png" 
+                                style="width: 265px; height: 218px; margin-right: 0px" />
                         </td>
                     </tr>
                 </table>
                 <br />
             </div><br />
              <div class="auto-style9" onclick="fun('diagonise');" style="color: #CC99FF; font-style: italic; font-weight: bold; cursor: pointer; font-size: x-large;">
-                Diagonise & Treatment:
+                Diagonise & Treatment:<br />
                    <image id="2i" src="rsz_1rsz_02_play-512.png"  onclick="play(2);" /> <br />
         <audio id="2" style="display:none" controls ><source src="info_typhoid/typh_diago.mp3"/>Your browser doesn't support</audio>
              </div>

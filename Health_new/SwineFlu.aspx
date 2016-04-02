@@ -152,13 +152,20 @@
                                 <asp:ListItem>diarrhea</asp:ListItem>
                                 <asp:ListItem>nausea and vomiting</asp:ListItem>
                             </asp:BulletedList>
+                            <br />
+                             <img alt="" src="download.jpe" style="width: 216px; height: 233px" /><img 
+                                alt="" src="download%20(1).jpe" style="width: 240px; height: 157px" /><img 
+                                alt="" src="download%20(8).jpe" style="width: 302px; height: 167px" /><br />
+                            <img alt="" src="download%20(4).jpe" style="width: 233px; height: 217px" /><img 
+                                alt="" src="download%20(9).jpe" style="width: 183px; height: 275px" /><img 
+                                alt="" src="images%20(1).jpe" style="width: 225px; height: 252px" />
                         </td>
                     </tr>
                 </table>
                 <br />
             </div><br />
              <div class="auto-style9" onclick="fun('diagonise');" style="color: #CC99FF; font-style: italic; font-weight: bold; cursor: pointer; font-size: x-large;">
-                Diagonise & Treatment:
+                Diagonise & Treatment:<br />
                   <image id="2i" src="rsz_1rsz_02_play-512.png"  onclick="play(2);" /> <br />
         <audio id="2" style="display:none" controls ><source src="info_swineflu/swin_diago.mp3"/>Your browser doesn't support</audio>
 
@@ -203,6 +210,13 @@
                                 <asp:ListItem>staying home from work or school if you&#39;re ill</asp:ListItem>
                                 <asp:ListItem>avoiding large gatherings when swine flu is in season</asp:ListItem>
                             </asp:BulletedList>
+                            <br />
+                             <img alt="" src="download.jpe" style="width: 216px; height: 233px" /><img 
+                                alt="" src="download%20(1).jpe" style="width: 240px; height: 157px" /><img 
+                                alt="" src="download%20(8).jpe" style="width: 302px; height: 167px" /><br />
+                            <img alt="" src="download%20(4).jpe" style="width: 233px; height: 217px" /><img 
+                                alt="" src="download%20(9).jpe" style="width: 183px; height: 275px" /><img 
+                                alt="" src="images%20(1).jpe" style="width: 225px; height: 252px" />
                         </td>
                     </tr>
                 </table>

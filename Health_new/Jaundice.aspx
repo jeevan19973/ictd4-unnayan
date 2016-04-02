@@ -141,17 +141,21 @@
                                 <asp:ListItem>You may also have dark urine and pale stools. </asp:ListItem>
                             </asp:BulletedList>
                             <br />
-                            If an underlying health condition such as viral hepatitis is to blame for the jaundice, you might experience other symptoms, such as excessive fatigue and vomiting. </td>
+                            If an underlying health condition such as viral hepatitis is to blame for the jaundice, you might experience other symptoms, such as excessive fatigue and vomiting. 
+                            <br />
+                            <br />
+                            <br />
+                            <asp:Image ID="Image12" runat="server" Height="123px" ImageUrl="~/Health_new/images/jaundice.JPG" Width="197px" />
+                        </td>
                     </tr>
                 </table>
                 <br />
             </div><br />
              <div class="auto-style9" onclick="fun('diagonise');" style="color: #CC99FF; font-style: italic; font-weight: bold; cursor: pointer; font-size: x-large;">
-                Diagonise & Treatment:
-                 
+                Diagonise & Treatment:<br />
+             
         <image id="2i" src="rsz_1rsz_02_play-512.png"  onclick="play(2);" /> <br />
         <audio id="2" style="display:none" controls ><source src="info_jaundice/jaun_diago.mp3"/>Your browser doesn't support</audio>
-
 
              </div>
             <div id="diagonise" hidden="hidden">  <br />

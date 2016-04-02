@@ -147,13 +147,20 @@
                                 <asp:ListItem>convulsions</asp:ListItem>
                                 <asp:ListItem>coma</asp:ListItem>
                             </asp:BulletedList>
+                            <br />
+                             <img alt="" src="download%20(1).jpe" style="width: 240px; height: 157px" /><img 
+                                alt="" src="download.jpe" style="width: 216px; height: 233px" /><img alt="" 
+                                src="download%20(3).jpe" style="width: 289px; height: 174px" /><br />
+                            <img alt="" src="images%20(1).jpe" style="width: 189px; height: 224px" /><img 
+                                alt="" src="images.jpe" style="width: 259px; height: 194px" /><img alt="" 
+                                src="download%20(2).jpe" style="width: 318px; height: 159px" />
                         </td>
                     </tr>
                 </table>
                 <br />
             </div><br />
              <div class="auto-style9" onclick="fun('diagonise');" style="color: #CC99FF; font-style: italic; font-weight: bold; cursor: pointer; font-size: x-large;">
-                Diagonise & Treatment:
+                Diagonise & Treatment:<br />
                  <image id="2i" src="rsz_1rsz_02_play-512.png"  onclick="play(2);" /> <br />
         <audio id="2" style="display:none" controls ><source src="info_malaria/mala_diago.mp3"/>Your browser doesn't support</audio>
              </div>
