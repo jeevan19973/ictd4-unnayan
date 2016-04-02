@@ -5,6 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        #form1 {
+            text-decoration: underline;
+        }
+    </style>
+
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,24 +26,31 @@
         </div>
         <div>
         </div>
-        <asp:GridView ID="GridView1" runat="server"  Onselectedindexchanged="GridView1_SelectedIndexChanged" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" style="margin-right: 0px" DataKeyNames="forumId">
+        <asp:GridView ID="GridView1" runat="server"  Onselectedindexchanged="GridView1_SelectedIndexChanged" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" style="margin-right: 0px" DataKeyNames="forumId" DataSourceID="SqlDataSource2">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:BoundField DataField="forumId" HeaderText="forumId" SortExpression="forumId" InsertVisible="False" ReadOnly="True" />
                 
-                <asp:BoundField DataField="question" HeaderText="question" SortExpression="question" />
-                <asp:BoundField DataField="posterName" HeaderText="posterName" SortExpression="posterName" />
+                <asp:TemplateField HeaderText="question">
+                    <ItemTemplate>
+                        <asp:TextBox ID="TextBox3" runat="server" Height="62px" Text='<%# Bind("question") %>' TextMode="MultiLine" Width="213px"></asp:TextBox>
+                    </ItemTemplate>
+                </asp:TemplateField>
+
                 <asp:BoundField DataField="dateTim" HeaderText="dateTim" SortExpression="dateTim" />
-                <asp:TemplateField>
+              
+                <asp:ImageField HeaderText="ProfilePicture"  ControlStyle-Height="100px" ControlStyle-Width="100px" DataImageUrlField = "photoId_Path">
+<ControlStyle Height="100px" Width="100px"></ControlStyle>
+                </asp:ImageField>
+                
+              
+                <asp:TemplateField HeaderText="Discussion">
                     <ItemTemplate>
-                        <asp:Button ID="Button1" runat="server" CommandName="Select" Text="View Comments" />
+                        <asp:Button ID="Button1" runat="server" CommandName="Select" Text="View Discussion" />
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:TemplateField>
-                    <ItemTemplate>
-                        <asp:TextBox ID="TextBox3" runat="server" Height="16px" Text='<%# Bind("question") %>' TextMode="MultiLine"></asp:TextBox>
-                    </ItemTemplate>
-                </asp:TemplateField>
+                
+              
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -50,7 +64,9 @@
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
 
         </asp:GridView>
+            
             <asp:TextBox ID="TextBox1" runat="server" Height="71px" TextMode="MultiLine" Width="518px"></asp:TextBox>
+        
         <br />
         <div>
             Your Name
@@ -58,8 +74,7 @@
             <br />
             <asp:Button ID="postQuestion" runat="server" Text="Post Your Question" OnClick="postQuestion_Click" />
         </div>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [forumId],[question], [posterName], [dateTim] FROM [Forum]  WHERE ([titleId] = @titleId)
-">
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT user_db.photoId_Path,Forum.forumId, Forum.question, Forum.dateTim FROM Forum INNER JOIN user_db ON Forum.user_id = user_db.user_id WHERE (Forum.titleId = @titleId)">
             <SelectParameters>
                 <asp:ControlParameter ControlID="DropDownList1" Name="titleId" PropertyName="SelectedValue" />
             </SelectParameters>

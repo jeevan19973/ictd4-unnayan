@@ -8,12 +8,21 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:GridView ID="GridView1" runat="server" Onselectedindexchanged="Page_Load" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" style="margin-right: 0px">
+        <asp:GridView ID="GridView1" runat="server"  AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" style="margin-right: 0px" DataKeyNames="threadId" DataSourceID="SqlDataSource1"  >
             <AlternatingRowStyle BackColor="White" />
             <Columns>
+                <asp:BoundField DataField="threadId" HeaderText="threadId" InsertVisible="False" ReadOnly="True" SortExpression="threadId" />
                 <asp:BoundField DataField="answer" HeaderText="answer" SortExpression="answer" />
-                <asp:BoundField DataField="PosterName" HeaderText="PosterName" SortExpression="PosterName" />
                 <asp:BoundField DataField="dateTime" HeaderText="dateTime" SortExpression="dateTime" />
+                <asp:TemplateField>
+                     
+
+
+                    
+                     
+
+
+                </asp:TemplateField>
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -25,8 +34,14 @@
             <SortedAscendingHeaderStyle BackColor="#6D95E1" />
             <SortedDescendingCellStyle BackColor="#E9EBEF" />
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
+
         </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [answer], [PosterName], [dateTime] FROM [Thread]"></asp:SqlDataSource>
+            <asp:TextBox ID="TextBox3" runat="server" Visible="False"></asp:TextBox>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server"  ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT threadId, answer, dateTime FROM Thread WHERE (forumId = @forumId)">
+                <SelectParameters>
+                    <asp:SessionParameter Name="forumId" SessionField="ForumId" />
+                </SelectParameters>
+        </asp:SqlDataSource>
     <div>
     
             <asp:TextBox ID="TextBox1" runat="server" Height="71px" TextMode="MultiLine" Width="518px"></asp:TextBox>
