@@ -31,7 +31,7 @@ public partial class _home : System.Web.UI.Page
     }
     protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/News/news_main.aspx");
+        Response.Redirect("~/News/unnayannews/home.aspx");
     }
     protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
     {
@@ -43,7 +43,7 @@ public partial class _home : System.Web.UI.Page
     }
     protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
     {
-        Response.Redirect("~/Weather/weather_main.aspx");
+        Response.Redirect("~/Weather_new/home.aspx");
     }
     protected void ImageButton12_Click(object sender, ImageClickEventArgs e)
     {
@@ -62,5 +62,9 @@ public partial class _home : System.Web.UI.Page
     protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
     {
         Response.Redirect("~/Home/home.aspx");
+    }
+    protected void ImageButton14_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("~/Health_new/home.aspx");
     }
 }
