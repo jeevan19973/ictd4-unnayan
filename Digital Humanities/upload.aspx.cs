@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Net;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Configuration;
@@ -11,12 +12,53 @@ using System.Collections;
 
 public partial class upload : System.Web.UI.Page
 {
+    string lat, lon, ip;
+    int count = 0;
     protected void Page_Load(object sender, EventArgs e)
     {
-      
+        ip = Request.UserHostAddress;
+       
+            }
+
+    protected string getLatitude(string data)
+    {
+        int pos_lat = data.IndexOf("latitude") + 10;
+        string sublat = data.Substring(pos_lat);
+        string latStr = "";
+        for (int i = 0; i < 10; i++)
+        {
+            if (sublat[i] == ',')
+                break;
+            latStr = latStr + sublat[i];
+
+        }
+
+        return latStr;
+
     }
+    protected string getLongitude(string data)
+    {
+        int pos_lon = data.IndexOf("longitude") + 11;
+        string sublon = data.Substring(pos_lon);
+        string lonStr = "";
+        for (int i = 0; i < 10; i++)
+        {
+            if (sublon[i] == ',')
+                break;
+            lonStr = lonStr + sublon[i];
+
+        }
+
+        return lonStr;
+    }
+
+
     protected void Button1_Click(object sender, EventArgs e)
-    {   try
+    {
+       
+
+        
+        try
         {
             Boolean errorx = false;
             details.Text = "Upload details";
@@ -41,13 +83,20 @@ public partial class upload : System.Web.UI.Page
                     SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                     conn.Open();
                     string uploadinp = "Insert into [upload] (Name,Description,uploadpath) values(@a,@b,@c)";
-
+                   // string place = "Insert into [Locations] (Latitude,Longitude,City,Country) values(@x,@y,@z,@w)";
+                    
                     SqlCommand com = new SqlCommand(uploadinp, conn);
-
+                 
                     com.Parameters.AddWithValue("@a", Uploadim.FileName);
                     com.Parameters.AddWithValue("@b", "jeevan");
                     com.Parameters.AddWithValue("@c", filepath);
+                   
                     com.ExecuteNonQuery();
+
+                    string place = "Insert into [Locations] (Latitude,Longitude,City,Country) values("+lat+","+lon+","+Uploadim.FileName+",jeevan)";
+                    SqlCommand com2 = new SqlCommand(place, conn);
+
+
                     conn.Close();
                 }
 
@@ -130,6 +179,33 @@ public partial class upload : System.Web.UI.Page
     }
     protected void Buttonvid_Click(object sender, ImageClickEventArgs e)
     {
+        count++;
+        if (count == 1)
+        {
+            string ips = "http://geoip.nekudo.com/api/"+ip+"/en";
+            try
+            {
+                HttpWebRequest rqst = (HttpWebRequest)WebRequest.Create(ips);
+                rqst.Method = "GET";
+
+                HttpWebResponse resp = (HttpWebResponse)rqst.GetResponse();
+
+                Stream data = resp.GetResponseStream();
+                StreamReader reader = new StreamReader(data);
+
+                string dat = reader.ReadToEnd();
+
+                string lat = getLatitude(dat);
+                string lon = getLongitude(dat);
+                Response.Write(lat);
+                Response.Write(lon);
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex);
+                Response.Write("<script>alert('Error! Enter valid city name or check your internet conncetion');</script>");
+            }
+        }
         if (FileUpload1.Visible == false)
         {
             FileUpload1.Visible = true;
@@ -142,6 +218,33 @@ public partial class upload : System.Web.UI.Page
     }
     protected void Buttonaud_Click(object sender, ImageClickEventArgs e)
     {
+        count++;
+        if (count == 1)
+        {
+            string ips = "http://geoip.nekudo.com/api/"+ip+"/en";
+            try
+            {
+                HttpWebRequest rqst = (HttpWebRequest)WebRequest.Create(ips);
+                rqst.Method = "GET";
+
+                HttpWebResponse resp = (HttpWebResponse)rqst.GetResponse();
+
+                Stream data = resp.GetResponseStream();
+                StreamReader reader = new StreamReader(data);
+
+                string dat = reader.ReadToEnd();
+
+                string lat = getLatitude(dat);
+                string lon = getLongitude(dat);
+                Response.Write(lat);
+                Response.Write(lon);
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex);
+                Response.Write("<script>alert('Error! Enter valid city name or check your internet conncetion');</script>");
+            }
+        }
         if (FileUpload2.Visible == false)
         {
             FileUpload2.Visible = true;
@@ -154,6 +257,33 @@ public partial class upload : System.Web.UI.Page
     }
     protected void Buttonimg_Click(object sender, ImageClickEventArgs e)
     {
+        count++;
+        if (count == 1)
+        {
+            string ips = "http://geoip.nekudo.com/api/"+ip+"/en";
+            try
+            {
+                HttpWebRequest rqst = (HttpWebRequest)WebRequest.Create(ips);
+                rqst.Method = "GET";
+
+                HttpWebResponse resp = (HttpWebResponse)rqst.GetResponse();
+
+                Stream data = resp.GetResponseStream();
+                StreamReader reader = new StreamReader(data);
+
+                string dat = reader.ReadToEnd();
+
+                string lat = getLatitude(dat);
+                string lon = getLongitude(dat);
+                Response.Write(lat);
+                Response.Write(lon);
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex);
+                Response.Write("<script>alert('Error! Enter valid city name or check your internet conncetion');</script>");
+            }
+        }
         if(Uploadim.Visible == false)
         {
             Uploadim.Visible = true;

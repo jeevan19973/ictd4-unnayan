@@ -24,6 +24,10 @@
     </style>
 </head>
 <body>
+   
+
+
+
     <form id="form1" runat="server">
     <div style="height: 540px; width: 709px;">
     
@@ -74,6 +78,9 @@
     
         <br />
         <br />
+    
+        <br />
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Digital Humanities/geolocation.aspx">See Locations</asp:HyperLink>
     
     </div>
     </form>
